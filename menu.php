@@ -1,10 +1,5 @@
 <link rel="stylesheet" href="./css/style.css">
 <header class="header_area">
-
-
-
-
-
         <div class="main-menu">
             <nav class=" navbar-expand-lg fixed-top navbar navbar-light" style="background-color:#1e1f1a; ">
                 <a class="navbar-brand   " href="#">

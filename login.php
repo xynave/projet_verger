@@ -144,7 +144,7 @@
                         </label>
                       </div>
                     </div>
-                    <button class="btn btn-success float-right" type="submit">Inscription</button>
+                    <button class="btn btn-dark float-right" type="submit">Inscription</button>
                   </form>
             </div>
           </div>
