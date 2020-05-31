@@ -7,7 +7,7 @@
                     verger
                   </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon btn-primary"></span>
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
