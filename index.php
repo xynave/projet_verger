@@ -59,7 +59,7 @@
                         <div class="center">
                             <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                               <div class="col lg-4">
-                                <div class="card " style="width: 15rem;">
+                                <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                    
@@ -99,10 +99,10 @@
                                   </div>
                                 </div>
                               </div>
-
+                              <br>
 
                               <div class="col lg-4">
-                                <div class="card " style="width: 15rem;">
+                                <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -142,7 +142,7 @@
 
 
                               <div class="col lg-4">
-                                <div class="card " style="width: 15rem;">
+                                <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -181,7 +181,7 @@
                               </div>
                               
                               <div class="col lg-4">
-                                <div class="card " style="width: 15rem;">
+                                <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -247,7 +247,7 @@
                         <div class="center">
                             <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                               <div class="col lg-4">
-                                <div class="card " style="width: 15rem;">
+                                <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                    
@@ -290,7 +290,7 @@
 
 
                               <div class="col lg-4">
-                                <div class="card " style="width: 15rem;">
+                                <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -330,7 +330,7 @@
 
 
                               <div class="col lg-4">
-                                <div class="card " style="width: 15rem;">
+                                <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -369,7 +369,7 @@
                               </div>
                               
                               <div class="col lg-4">
-                                <div class="card " style="width: 15rem;">
+                                <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">

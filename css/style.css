@@ -36,6 +36,10 @@
            .centered{
                text-align: center;
            }
+           .margin-left-bouton{
+             
+               padding-left: 200px;
+           }
             
 /* Fin Zone initialisation tout */
 
@@ -148,6 +152,7 @@
             .fa-twitter{ 
                 color: #00acee;
             }
+
             
 
 /* FIN Zone footer */
