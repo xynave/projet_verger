@@ -13,7 +13,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                   <ul class="navbar-nav  mr-auto mt-2 mt-lg-0">
                     <li class="nav-item ">
-                      <a id="accueil" class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
+                      <a id="accueil" class="nav-link" href="index.php">Accueil  <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                       <a id="creation" class="nav-link" href="creation.php">Création d'annonce</a>
