@@ -52,8 +52,9 @@
                     </br>
                     </br> 
                  
-                          
-                          <h4 > <i class="fas fa-angle-right"></i> Proche de chez vous</h4>
+                          <h4 > <i class="fas fa-angle-right" ></i> Proche de chez vous</h4>     
+                         
+                                
                     </br>
 
                         <div class="center">

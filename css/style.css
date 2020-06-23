@@ -58,14 +58,11 @@
             .header_area .main-menu .nav-item .nav-link:hover{
                 font-family: "FrederickatheGreat";
                 font-weight: 500;
-                color: #f1cb76;
-            
+                color: #e2cfa6;
+                border-bottom:2px solid #e2cfa6;
             }
 
-            .header_area .main-menu .nav-item .nav-link:hover{
-            /*text-decoration:underline;*/
-            border-bottom:2px solid #f1cb76;
-            }
+           
             
 /* FIN Zone header/menu.php */
 

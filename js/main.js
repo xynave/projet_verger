@@ -13,6 +13,6 @@
     } else {
       window.location.replace(newurl);
     }
-}
+};
 
 //fin de changement page
