@@ -135,8 +135,14 @@
 
             }
             .fa-facebook-square{
-                color: #3b5998;
+               /* color: #3b5998;*/
+               color: white;
                 padding-right:  2.5rem;
+            }
+            .fa-facebook-square:hover{
+                color: white;
+                padding-right:  2.5rem;
+                
             }
 
             .fa-instagram{
