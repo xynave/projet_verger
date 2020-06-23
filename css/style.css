@@ -36,10 +36,7 @@
            .centered{
                text-align: center;
            }
-           .margin-left-bouton{
-             
-               padding-left: 200px;
-           }
+         
             
 /* Fin Zone initialisation tout */
 
@@ -69,6 +66,7 @@
             /*text-decoration:underline;*/
             border-bottom:2px solid #f1cb76;
             }
+            
 /* FIN Zone header/menu.php */
 
 /* Début Zone bannière/imagerecherche.php */
