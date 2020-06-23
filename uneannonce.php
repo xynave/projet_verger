@@ -69,6 +69,8 @@
                     <h5>Le produit:</h5>
 
                     <div class="card-deck">
+                    
+                    <div class="row justify-content-center" >
                         <div class="card">
                             <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160"class="d-block w-100" alt="...">
                             <div class="card-footer text-center">
@@ -87,6 +89,7 @@
                                 <small class="text-muted ">Troisième photo</small>
                               </div>
                         </div>
+                      </div>
                       </div>
 
                         </br>

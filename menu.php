@@ -47,6 +47,10 @@
                           {
                             document.getElementById("profil").style.color = "#f1cb76";
                             document.getElementById("profil").style.borderBottom = "2px solid #f1cb76";
+                          }else if(window.location.pathname==='/test/carte.php')
+                          {
+                            document.getElementById("accueil").style.color = "#f1cb76";
+                            document.getElementById("accueil").style.borderBottom = "2px solid #f1cb76";
                           }
 
                               
