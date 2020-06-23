@@ -135,12 +135,12 @@
 
             }
             .fa-facebook-square{
-               /* color: #3b5998;*/
-               color: white;
+                color: #3b5998;
                 padding-right:  2.5rem;
             }
-            .fa-facebook-square:hover{
-                color: white;
+            .footer_icon_hover:hover{
+              
+               color: #f1cb76;
                 padding-right:  2.5rem;
                 
             }
@@ -155,6 +155,7 @@
             }
             .fa-twitter{ 
                 color: #00acee;
+                padding-right:  2.5rem;
             }
 
             
