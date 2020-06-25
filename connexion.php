@@ -1,3 +1,4 @@
+<!-- page connexion -->
 <!DOCTYPE html>
 <html >
 <head>
@@ -26,19 +27,22 @@
 <section class="premiere ">
  <div class="picture">
     <div class="block">
-
+<!-- grosse card qui engroupe tout -->
         <div class="card  border-dark ">
             <div class="card-header text-center" style="background-color:#1e1f1a;  color: white; ">
                 Connexion
               </div>
+             
             <div class="card-body ">
                 <form>
+                <!-- zone ou on rentre son email -->
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control " id="validationDefault01"  required>
                          </div>
                       </div>
+                      <!--zone ou on rentre son mot de passe  -->
                       <div class="form-group row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Mot de passe</label>
                         <div class="col-sm-10">
@@ -46,6 +50,7 @@
                         </div>
                       </div>
                     </br>
+                    <!-- zone pour créer ou reinitialiser son mot de passe -->
                     <p>Vous n'avez pas de compte? <a  href="login.php" class="float-center">Créer un compte </a></p> 
                     <p>Mot de passe oublié? <a  href="#" class="float-center">Réinitialiser le mot de passe </a></p> 
                         

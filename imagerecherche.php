@@ -1,13 +1,14 @@
-
+<!-- module de l'image de la bannière sur index et map -->
+<!-- dans le style on a l'image -->
 <section class="premiere-partie container-fluid">
   <div class="picturepresentation ">
     <div class="container " >
     <div class="row " >
     
-      
+      <!-- on insert le module catégorie -->
       <?php include("categorie.php");?>
       </div>
-      
+      <!--  on peut rechercher par nom -->
         <div class="input-group espace_bouton ">
           <div class="input-group-prepend espace_bouton">
             <div class="input-group-text  " id="btnGroupAddon">Nom</div>

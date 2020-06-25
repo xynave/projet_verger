@@ -1,3 +1,4 @@
+<!--page carte  -->
 <!DOCTYPE html>
 <html >
 <head>
@@ -44,7 +45,7 @@
 </br>
 </br>
 
-
+<!--bouton pour switch entre la carte et la page liste-->
       <section class="deplacer pic">
         </br>
               <div class="custom-control custom-switch ">
@@ -56,7 +57,7 @@
         </br> 
        
         
-
+<!-- zone de la map -->
           <div class=" mappi">
             <div id="map"></div>
             

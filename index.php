@@ -1,4 +1,4 @@
-
+<!-- page accueil -->
 <!DOCTYPE html>
 <html >
 <head>
@@ -41,7 +41,7 @@
             </br>
             </br>
 
-
+            <!-- bouton pour passer a la page map -->
                   <section class="deplacer pic">
                     </br>
                           <div class="custom-control custom-switch ">
@@ -56,20 +56,22 @@
                          
                                 
                     </br>
-
+                <!-- carroussel d'image -->
                         <div class="center">
+                        <!-- on choisi les nombres de petites cartes quand on reduit la fenetre -->
                             <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                               <div class="col lg-4">
+                              <!-- la carte du carroussel -->
                                 <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                   
+                                   <!--  les data c'est pour pouvoir tourner correctement les images-->
                                     <ol class="carousel-indicators">
                                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                                     </ol>
-
+                                          <!-- image  -->
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
                                         <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160"class="d-block w-100" alt="...">
@@ -81,7 +83,7 @@
                                         <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160"class="d-block w-100" alt="...">
                                       </div>
                                     </div>
-
+                                      <!--bouton pour changer les images   -->
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                       <span class="sr-only">Previous</span>
@@ -92,7 +94,7 @@
                                     </a>
                                   </div>
                             
-                            
+                            <!--  description du produit-->
                                   <div class="card-body ">
                                     <h5 class="card-title">Distance</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -101,7 +103,7 @@
                                 </div>
                               </div>
                               <br>
-
+                            <!-- nouvelle carte  -->
                               <div class="col lg-4">
                                 <div class="card shadow-sm mb-4" style="width: 15rem;">
 
@@ -141,7 +143,7 @@
                                 </div>
                               </div>
 
-
+                                <!-- nouvelle carte  -->
                               <div class="col lg-4">
                                 <div class="card shadow-sm mb-4" style="width: 15rem;">
 
@@ -181,6 +183,7 @@
                                 </div>
                               </div>
                               
+                              <!-- nouvelle carte  -->
                               <div class="col lg-4">
                                 <div class="card shadow-sm mb-4" style="width: 15rem;">
 
@@ -240,14 +243,15 @@
                     </br>
                     </br> 
                  
-                          
+                          <!-- nouvelle zone de carte  -->
                      <h4 > <i class="fas fa-angle-right"></i> 500 m de chez vous</h4>
                     </br>
                     
-
+                      <!-- nouveau initialisation carrousel-->
                         <div class="center">
                             <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                               <div class="col lg-4">
+                              <!-- nouvelle carte  -->
                                 <div class="card shadow-sm mb-4" style="width: 15rem;">
 
                                   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -288,6 +292,7 @@
                                   </div>
                                 </div>
                               </div>
+                              <!-- nouvelle carte  -->
 
 
                               <div class="col lg-4">
@@ -328,6 +333,7 @@
                                   </div>
                                 </div>
                               </div>
+                              <!-- nouvelle carte  -->
 
 
                               <div class="col lg-4">
@@ -368,6 +374,7 @@
                                   </div>
                                 </div>
                               </div>
+                              <!-- nouvelle carte  -->
                               
                               <div class="col lg-4">
                                 <div class="card shadow-sm mb-4" style="width: 15rem;">

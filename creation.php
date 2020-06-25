@@ -1,4 +1,5 @@
-!DOCTYPE html>
+<!-- page création annonce -->
+<!DOCTYPE html>
 <html >
 <head>
 <meta charset="UTF-8">
@@ -37,17 +38,17 @@
             <div class="card-body ">
                 <form>
                 <?php include("categorie.php");?>
-
+              <!-- on rentre la description du produit -->
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Description du produit </label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
-
+              <!-- on rentre les informations produit -->
                       <div class="form-group">
                         <label for="exampleFormControlTextarea1">Information général </label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
-                    
+                    <!--  on rentre les photos-->
                       <div class="form-group">
                         <label for="exampleFormControlFile1">Première photo</label>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -61,19 +62,19 @@
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
                       </div>
 
-
+                    <!-- on rentre la ville -->
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <label for="validationDefault03">Ville</label>
                         <input type="text" class="form-control border-dark" id="validationDefault03" required>
                       </div>
-                      
+                      <!-- on rentre le code postal -->
                       <div class="col-md-3 mb-3">
                         <label for="validationDefault05">Code postal</label>
                         <input type="text" class="form-control border-dark" id="validationDefault05" required>
                       </div>
                     </div>
-
+                      <!-- on rajout adresse -->
                     <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefault03">Adresse</label>

@@ -1,4 +1,6 @@
+<!-- module choix d'input  -->
 <div class="form-row">
+<!-- liste deroulante type produit -->
                         <div class="mr-4 ml-4 input-group mb-3">
                             <div class=" input-group-prepend">
                               <label class="input-group-text" for="inputGroupSelect01">Type</label>
@@ -11,7 +13,7 @@
                             </select>
                           </div>
                     </div>
-
+<!--  liste deroulante variété-->
                     <div class="form-row">
                         <div class="input-group mr-4 ml-4 mb-3">
                             <div class="input-group-prepend">
