@@ -1,6 +1,6 @@
 <div class="form-row">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
+                        <div class="mr-4 ml-4 input-group mb-3">
+                            <div class=" input-group-prepend">
                               <label class="input-group-text" for="inputGroupSelect01">Type</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect01">
@@ -13,7 +13,7 @@
                     </div>
 
                     <div class="form-row">
-                        <div class="input-group mb-3">
+                        <div class="input-group mr-4 ml-4 mb-3">
                             <div class="input-group-prepend">
                               <label class="input-group-text" for="inputGroupSelect02">Variété</label>
                             </div>
