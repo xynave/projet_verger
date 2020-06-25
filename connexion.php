@@ -54,18 +54,14 @@
                     <p>Vous n'avez pas de compte? <a  href="login.php" class="float-center">Créer un compte </a></p> 
                     <p>Mot de passe oublié? <a  href="#" class="float-center">Réinitialiser le mot de passe </a></p> 
                         
-                     
-                   
                       
                     <button class="btn btn-dark float-right" type="submit">Connexion</button>
                   </form>
             </div>
           </div>
-        
-     
     </div>
 
- </div>
+</div>
 
     
 </section>

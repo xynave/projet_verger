@@ -1,3 +1,4 @@
+  <!-- page changer mes données -->
 <!DOCTYPE html>
 <html >
 <head>
@@ -27,27 +28,30 @@
 <section class="premiere ">
  <div class="picture">
     <div class="block">
-
+  <!-- debut de la carte -->
         <div class="card  border-dark ">
             <div class="card-header text-center"  style="background-color:#1e1f1a;  color: white; ">
                 Mes informations
               </div>
+                <!-- debut la carte body -->
             <div class="card-body ">
                 <form>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
+                        <!-- on remplie le prenom -->
                       <label for="validationDefault01">Prénom</label>
                       <input type="text" class="form-control border-dark" id="validationDefault01"  required>
                     </div>
+                      <!-- on remplie le nom -->
                     <div class="col-md-6 mb-3">
                       <label for="validationDefault02">Nom</label>
                       <input type="text" class="form-control border-dark" id="validationDefault02"  required>
                     </div>
                   </div>
-
+                    <!-- on choix la date de naissance -->
                   <label >Date de naissance</label>
                   <div class="form-row">
-                    
+                      <!-- choix jours -->
                     <div class="col-md-3 mb-3">
                       <div class="form-group">
                         <label for="exampleFormControlSelect1">Jour</label>
@@ -86,6 +90,7 @@
                         </select>
                       </div>
                     </div>
+                      <!-- choix mois -->
                     <div class="col-md-3 mb-3">
                       <div class="form-group">
                         <label for="exampleFormControlSelect1">Mois</label>
@@ -105,7 +110,7 @@
                         </select>
                       </div>
                     </div>
-
+                      <!-- choix année -->
                     <div class="col-md-3 mb-3">
                       <div class="form-group">
                         <label for="exampleFormControlSelect1">Année</label>
@@ -204,11 +209,8 @@
                         </select>
                       </div>
                     </div>
-
                   </div>
-
-                    
-
+                      <!--  choix mail-->
                     <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefaultUsername">Mail</label>
@@ -220,39 +222,37 @@
                             </div>
                           </div>
                         </div>
-
+                          <!-- choix ville -->
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <label for="validationDefault03">Ville</label>
                         <input type="text" class="form-control border-dark" id="validationDefault03" required>
                       </div>
-                      
+                        <!-- choix code postal -->
                       <div class="col-md-3 mb-3">
                         <label for="validationDefault05">Code postal</label>
                         <input type="text" class="form-control border-dark" id="validationDefault05" required>
                       </div>
-                    </div>
-
+                    </div> 
+                      <!-- choix adresse -->
                     <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefault03">Adresse</label>
                             <input type="text" class="form-control border-dark" id="validationDefault03" required>
                           </div>
                       </div>
-
-                   
+                        <!--valider les infos  -->
                     <button class="btn btn-success float-right" type="submit">Valider</button>
                   </form>
             </div>
             
           </div>
           <br>
-     
     </div>
 
- </div>
+</div>
 
-   
+
 </section>
 <!-- end banniere -->
 

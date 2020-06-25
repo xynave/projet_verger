@@ -242,9 +242,9 @@
 
                     </br>
                     </br> 
-                 
+                
                           <!-- nouvelle zone de carte  -->
-                     <h4 > <i class="fas fa-angle-right"></i> 500 m de chez vous</h4>
+                    <h4 > <i class="fas fa-angle-right"></i> 500 m de chez vous</h4>
                     </br>
                     
                       <!-- nouveau initialisation carrousel-->
@@ -254,8 +254,7 @@
                               <!-- nouvelle carte  -->
                                 <div class="card shadow-sm mb-4" style="width: 15rem;">
 
-                                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                   
+                                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">                                   
                                     <ol class="carousel-indicators">
                                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -293,8 +292,6 @@
                                 </div>
                               </div>
                               <!-- nouvelle carte  -->
-
-
                               <div class="col lg-4">
                                 <div class="card shadow-sm mb-4" style="width: 15rem;">
 
@@ -419,12 +416,10 @@
                           </div>
                     
                   </section>
-
-                 
-
+                
                   <br>
           </Section>
-
+          
         
 <!--partie liste-->
 

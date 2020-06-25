@@ -1,7 +1,9 @@
+/*  initialisation des coordonné*/
 var ny = [45.7578137, 4.8320114];
 var IO = [45.7578137, 3.8320234];
 
 // création de la map
+/* création de la map avec l'id de ou on veut la placer avec coordonnées et niveua de zoom*/
 var map = L.map('map').setView(ny, 7);
 
 // création du calque images
@@ -27,6 +29,7 @@ function onLocationFound(e) {
 
   
 }
+/* fonction de localisation*/
 map.locate({setView: true, maxZoom: 7});
 map.on('locationfound', onLocationFound);
 function onLocationError(e) {

@@ -1,3 +1,4 @@
+<!-- page création de profil -->
 <!DOCTYPE html>
 <html >
 <head>
@@ -26,15 +27,17 @@
 <section class="premiere ">
  <div class="picture">
     <div class="block">
-
+<!-- carte general-->
         <div class="card  border-dark ">
             <div class="card-header text-center"  style="background-color:#1e1f1a;  color: white; ">
                 Inscription
               </div>
+              <!-- carte body -->
             <div class="card-body ">
                 <form>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
+                    <!-- zone rentre nom et prenom -->
                       <label for="validationDefault01">Prénom</label>
                       <input type="text" class="form-control border-dark" id="validationDefault01"  required>
                     </div>
@@ -43,10 +46,13 @@
                       <input type="text" class="form-control border-dark" id="validationDefault02"  required>
                     </div>
                   </div>
-
+                <!-- selection date de naissance 
+              <label for="date">Example date</label>
+          <input type="date" id="date">
+        -->
                   <label >Date de naissance</label>
                   <div class="form-row">
-                    
+                      <!-- selection jour -->
                   <div class="col-md-3 mb-3">
                       <div class="form-group">
                         <label for="exampleFormControlSelect1">Jour</label>
@@ -85,6 +91,7 @@
                         </select>
                       </div>
                     </div>
+                      <!-- slection mois -->
                     <div class="col-md-3 mb-3">
                       <div class="form-group">
                         <label for="exampleFormControlSelect1">Mois</label>
@@ -103,8 +110,8 @@
                           <option>Décembre</option>
                         </select>
                       </div>
-                    </div>
-
+                      </div>
+                    <!-- selection année -->
                     <div class="col-md-3 mb-3">
                       <div class="form-group">
                         <label for="exampleFormControlSelect1">Année</label>
@@ -204,7 +211,7 @@
                       </div>
                     </div>
                     </div>
-
+                      <!-- selection mail -->
                     <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefaultUsername">Mail</label>
@@ -216,41 +223,40 @@
                             </div>
                           </div>
                       </div>
-
+                        <!--selection mot de passe  -->
                       <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefault02">Mot de passe</label>
                             <input type="text" class="form-control border-dark" id="validationDefault02"  required>
                           </div>
                       </div>
-
+                        <!-- confirmation de mot de passe -->
                       <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefault02">Confirmation du mot de passe</label>
                             <input type="text" class="form-control border-dark" id="validationDefault02"  required>
                           </div>
                       </div>
-
-
+                        <!-- selection ville -->
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <label for="validationDefault03">Ville</label>
                         <input type="text" class="form-control border-dark" id="validationDefault03" required>
                       </div>
-                      
+                        <!--  selection code postal-->
                       <div class="col-md-3 mb-3">
                         <label for="validationDefault05">Code postal</label>
                         <input type="text" class="form-control border-dark" id="validationDefault05" required>
                       </div>
                     </div>
-
+                      <!--  selection adresse-->
                     <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefault03">Adresse</label>
                             <input type="text" class="form-control border-dark" id="validationDefault03" required>
                           </div>
                       </div>
-
+                        <!-- validation des conditions d'utilisation -->
                     <div class="form-group">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
@@ -259,6 +265,7 @@
                         </label>
                       </div>
                     </div>
+                      <!-- validation de l'inscription -->
                     <button class="btn btn-dark float-right" type="submit">Inscription</button>
                   </form>
             </div>

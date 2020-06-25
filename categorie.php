@@ -30,14 +30,16 @@
                      </br>
                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
                      <script>
-                     
+                    /* on initialise la fonction */ 
                       $(document).ready(function () {
+                        /*on choisi id*/
                       $("#inputGroupSelect01").click(function () {
                       $('#inputGroupSelect02')
+                      /*on choisi et supprime toute les options*/
                       .find('option')
                        .remove()
                        .end()
-                    
+                    /*on rajoute des nouvelles fonctions en fonctions de celles que l'on a choisi */
                              if($("#inputGroupSelect01").children("option:selected").val()==='1')
                             {$('#inputGroupSelect02')
                             .append('<option  value="Choisi_ta_variété">Choisi ta variété</option>')

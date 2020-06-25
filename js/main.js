@@ -2,6 +2,7 @@
 //changement carte a liste et inversement
   function myFunction() {
     // initialise checkbox
+
     var checkBox = document.getElementById("boutoncarte");
     // initialise url
     var newUrl = ["carte.php"];

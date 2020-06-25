@@ -1,7 +1,12 @@
-@font-face{
-   font-family: "Roboto";
-    src:'../fonts/Roboto-Regular.ttf' ;
+/*initialisation des fonts */
 
+
+@font-face{
+/* le nom que lon donne*/
+   font-family: "Roboto";
+   /*la source */
+    src:'../fonts/Roboto-Regular.ttf' ;
+/* autre font*/
     font-family: "FrederickatheGreat";
     src: '../fonts/FrederickatheGreat-Regular.ttf';
 }

@@ -1,4 +1,5 @@
-!DOCTYPE html>
+  <!-- page une annoce qui nous appartient -->
+<!DOCTYPE html>
 <html >
 <head>
 <meta charset="UTF-8">
@@ -25,19 +26,21 @@
    <!--==================END header Area==========================-->
   
 <section class="premiere ">
- <div class="picture">
+<div class="picture">
     <div class="block">
-
+  <!--creation carte  -->
         <div class="card  border-dark ">
             <div class="card-header text-center" style="background-color:#1e1f1a; color: white; ">
-               Mon annonce
+              Mon annonce
               </div>
+                <!-- debut carte body -->
             <div class="card-body ">
                 <form>
+                    <!-- intégration module categorie -->
                 <?php include("categorie.php");?>
 
                     <p>Les photos:</p>
-
+                      <!-- les photos du produits -->
                     <div class="card-deck">
                         <div class="card">
                             <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160"class="d-block w-100" alt="...">
@@ -58,9 +61,8 @@
                               </div>
                         </div>
                       </div>
-
                       </br>
-
+                        <!--les infos des photo des produits -->
                       <div class="form-group">
                         <label for="exampleFormControlFile1">Première photo</label>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -73,24 +75,20 @@
                         <label for="exampleFormControlFile1">Troisième photo</label>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
                       </div>
-
                       </br>
-
+                        <!-- description du produit -->
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Description du produit </label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
-
                       </br>
-
+                        <!-- les information general -->
                       <div class="form-group">
                         <label for="exampleFormControlTextarea1">Information général </label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
-                    
-                     </br>
-
-
+                    </br>
+                      <!-- selection ville -->
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <label for="validationDefault03">Ville</label>
@@ -102,14 +100,14 @@
                         <input type="text" class="form-control border-dark" id="validationDefault05" required>
                       </div>
                     </div>
-
+                    <!-- selection adresse -->
                     <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefault03">Adresse</label>
                             <input type="text" class="form-control border-dark" id="validationDefault03" required>
                           </div>
                       </div>
-
+                      <!-- valider modification -->
                     
                     <button class="btn btn-success float-right" type="submit">Modifier</button>
                   </form>
@@ -119,9 +117,8 @@
           <br>
     </div>
 
- </div>
+</div>
 
-   
 </section>
 <!-- end banniere -->
 <?php include("footer.php");?>
