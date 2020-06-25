@@ -206,13 +206,6 @@
                     </div>
                     </div>
 
-                    
-
-                  
-                    
-
-                    
-
                     <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="validationDefaultUsername">Mail</label>

@@ -57,7 +57,7 @@
        
         
 
-          <div class="mappi">
+          <div class=" mappi">
             <div id="map"></div>
             
           </div>

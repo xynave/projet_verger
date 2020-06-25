@@ -34,37 +34,7 @@
               </div>
             <div class="card-body ">
                 <form>
-                    <div class="form-row">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Type</label>
-                            </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>Choisi ton type de produit</option>
-                              <option value="1">Fruit</option>
-                              <option value="2">Légume</option>
-                              <option value="3">Autres</option>
-                            </select>
-                          </div>
-                    </div>
-
-                     </br>
-
-                    <div class="form-row">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Variété</label>
-                            </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>Choisi ta variété</option>
-                              <option value="1">Pomme</option>
-                              <option value="2">Poire</option>
-                              <option value="3">Pêche</option>
-                            </select>
-                          </div>
-                    </div>
-
-                     </br>
+                <?php include("categorie.php");?>
 
                     <p>Les photos:</p>
 
@@ -146,12 +116,12 @@
             </div>
           </div>
         
-     
+          <br>
     </div>
 
  </div>
 
-    
+   
 </section>
 <!-- end banniere -->
 <?php include("footer.php");?>
