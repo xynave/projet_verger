@@ -244,14 +244,15 @@
                     <button class="btn btn-success float-right" type="submit">Valider</button>
                   </form>
             </div>
+            
           </div>
-        
+          <br>
      
     </div>
 
  </div>
 
-    
+   
 </section>
 <!-- end banniere -->
 
