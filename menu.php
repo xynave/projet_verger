@@ -36,20 +36,20 @@
  
                           <script>
                           
-                          if(window.location.pathname==='/test/index.php')
+                          if(window.location.pathname==='/projet_verger/index.php')
                           {
                             document.getElementById("accueil").textContent="Accueil / Liste"
                             document.getElementById("accueil").style.color = "#f1cb76";
                             document.getElementById("accueil").style.borderBottom = "2px solid #f1cb76";
-                          }else if(window.location.pathname==='/test/creation.php')
+                          }else if(window.location.pathname==='/projet_verger/creation.php')
                           {
                             document.getElementById("creation").style.color = "#f1cb76";
                             document.getElementById("creation").style.borderBottom = "2px solid #f1cb76";
-                          }else if(window.location.pathname==='/test/profil.php')
+                          }else if(window.location.pathname==='/projet_verger/profil.php')
                           {
                             document.getElementById("profil").style.color = "#f1cb76";
                             document.getElementById("profil").style.borderBottom = "2px solid #f1cb76";
-                          }else if(window.location.pathname==='/test/carte.php')
+                          }else if(window.location.pathname==='/projet_verger/carte.php')
                           {
                             document.getElementById("accueil").textContent="Accueil / Carte"
                             document.getElementById("accueil").style.color = "#f1cb76";
