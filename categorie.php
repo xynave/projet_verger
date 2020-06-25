@@ -4,7 +4,7 @@
                               <label class="input-group-text" for="inputGroupSelect01">Type</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect01">
-                              <option value="0">Choisi ton type de produit</option>
+                              <option value="0">Choisi un type de produit</option>
                               <option value="1">Fruit</option>
                               <option value="2">Légume</option>
                               <option value="3">Autres</option>
@@ -18,7 +18,7 @@
                               <label class="input-group-text" for="inputGroupSelect02">Variété</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect02">
-                              <option selected>Choisi ta variété</option>
+                              <option selected>Choisi une variété</option>
                              
                             </select>
                           </div>
