@@ -20,16 +20,14 @@
                               <label class="input-group-text" for="inputGroupSelect02">Variété</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect02">
-                              <option selected>Choisis une variété</option>
-                             
+                            <td><option selected>Choisis une variété</option></td>
                             </select>
                           </div>
                     </div>
-                   
 
-                     </br>
-                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-                     <script>
+                    </br>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+                    <script>
                     /* on initialise la fonction */ 
                       $(document).ready(function () {
                         /*on choisi id*/
@@ -37,22 +35,22 @@
                       $('#inputGroupSelect02')
                       /*on choisi et supprime toute les options*/
                       .find('option')
-                       .remove()
-                       .end()
+                      .remove()
+                      .end()
                     /*on rajoute des nouvelles fonctions en fonctions de celles que l'on a choisi */
-                             if($("#inputGroupSelect01").children("option:selected").val()==='1')
+                            if($("#inputGroupSelect01").children("option:selected").val()==='1')
                             {$('#inputGroupSelect02')
                             .append('<option  value="Choisis_ta_variété">Choisis ta variété</option>')
                             .append('<option value="Pomme">Pomme</option>')
                             .append('<option value="Poire">Poire</option>')
-                           .append('<option value="Abricot">Abricot</option>')
+                            .append('<option value="Abricot">Abricot</option>')
                           }
                           else if($("#inputGroupSelect01").children("option:selected").val()==='2')
                             {$('#inputGroupSelect02')
                             .append('<option  value="Choisis_ta_variété">Choisis ta variété</option>')
                             .append('<option value="Courgette">Courgette</option>')
                             .append('<option value="Carotte">Carrotte</option>')
-                           .append('<option value="Radis">Radis</option>')
+                            .append('<option value="Radis">Radis</option>')
                           }
                           else if($("#inputGroupSelect01").children("option:selected").val()==='3')
                             {$('#inputGroupSelect02')
@@ -63,11 +61,8 @@
                           else if($("#inputGroupSelect01").children("option:selected").val()==='0')
                             {$('#inputGroupSelect02')
                             .append('<option  value="Choisis_ta_variété">Choisis ta variété</option>')
-                           
                           }
                       });
-                       });
-                   
-                       
+                      });
                       
-                     </script>
+                    </script>

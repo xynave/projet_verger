@@ -12,9 +12,9 @@
             <hr width="50%" color=" #999">
             <a class="grey_footer" href=""> <i class="fas fa-industry"></i>  Entreprise  </a>
             <hr width="50%" color=" #999">
-            <a class="grey_footer" href="">  <i class="fas fa-user-secret"></i>  Politique de Protection des données personnelles  </a>
+            <a class="grey_footer" href="">  <i class="fas fa-user-shield"></i>  Politique de Protection des données personnelles  </a>
             /
-            <a class="grey_footer" href="">  <i class="fas fa-user-shield"></i>  Conditions générales d'utilisation  </a>
+            <a class="grey_footer" href="">  <i class="fas fa-user-secret"></i>  Conditions générales d'utilisation  </a>
         </div>
     
 
