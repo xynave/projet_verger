@@ -2,7 +2,6 @@
 <!-- non utilise module -->
     <div class="col lg-4">
                               <div class="card border-success" style="width: 15rem;">
-
                                 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                                   <ol class="carousel-indicators">
                                     <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>

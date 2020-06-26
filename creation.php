@@ -17,18 +17,17 @@
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
- 
-
-   <!--==================Start header Area==========================-->
-   <?php include("menu.php");?>
 
 
-   <!--==================END header Area==========================-->
+  <!--==================Start header Area==========================-->
+  <?php include("menu.php");?>
+
+
+  <!--==================END header Area==========================-->
   
 <section class="premiere ">
- <div class="picture">
+<div class="picture">
     <div class="block">
-
         <div class="card  border-dark ">
             <div class="card-header text-center" style="background-color:#1e1f1a; color: white; ">
                 Création annonce
@@ -61,7 +60,6 @@
                         <label for="exampleFormControlFile1">Troisième photo</label>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
                       </div>
-
                     <!-- on rentre la ville -->
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
@@ -81,26 +79,25 @@
                             <input type="text" class="form-control border-dark" id="validationDefault03" required>
                           </div>
                       </div>
-
                     
                     <button class="btn btn-success float-right" type="submit">Poster</button>
                   </form>
             </div>
           </div>
         
-     <br>
+    <br>
     </div>
 
- </div>
+</div>
 
-    
+
 </section>
 <!-- end banniere -->
 
 
 
 
-        
+
 
 
 <?php include("footer.php");?>
