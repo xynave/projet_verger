@@ -44,13 +44,58 @@
 
     foreach($prenoms as $element)
     {
-        echo'<a href="#" class="list-group-item list-group-item-action">
+        echo'
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">' . $element . '</h5>
                     <small>3 days ago</small>
                 </div>
-              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-              <small>Donec id elit non mi porta.</small>
+
+                <!-- noveau item-->
+                                                      <div class="card mb-3" >
+                                                        <div class="row no-gutters">
+                                                          <div class="col-md-4">
+                                                          <a href="#" class="list-group-item list-group-item-action">
+                                                            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                                                                <ol class="carousel-indicators">
+                                                                  <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                                                  <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                                                  <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                                                </ol>
+
+                                                                <div class="carousel-inner">
+                                                                  <div class="carousel-item active">
+                                                                    <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="50" height="180"class="d-block w-100" alt="...">
+                                                                  </div>
+                                                                  <div class="carousel-item">
+                                                                    <img src="./images/Malus-Boskoop_organic[1].jpg" width="50" height="180"class="d-block w-100" alt="...">
+                                                                  </div>
+                                                                  <div class="carousel-item">
+                                                                    <img src="./images/Malus-Boskoop_organic[1].jpg" width="50" height="180"class="d-block w-100" alt="...">
+                                                                  </div>
+                                                                </div>
+
+                                                                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                  <span class="sr-only">Previous</span>
+                                                                </a>
+                                                                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                  <span class="sr-only">Next</span>
+                                                                </a>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <span class="badge badge-primary badge-pilla float-right">14</span>
+                                                              <h5 class="card-title">Card title</h5>
+                                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
             </a>'
         ;
     }
