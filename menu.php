@@ -1,31 +1,5 @@
   <!--module la barre de navigation  -->
-<style>
-   .header_area .main-menu .navbar .navbar-brand{
-                margin-left:  2rem ;
-                color: #ecf0f1;
-            }
 
-            .header_area .main-menu .nav-item .nav-link{
-                margin-left:  2rem ;
-                font-family: "FrederickatheGreat"; 
-                font-weight: 500;
-                color:#ecf0f1;
-            }
-
-
-            .header_area .main-menu .nav-item .nav-link:hover{
-                font-family: "FrederickatheGreat";
-                font-weight: 500;
-                color:  #f1cb76;
-                border-bottom:2px solid  #f1cb76;
-            }
-            .bouton-style{
-                background-color: #f1cb76;
-            }
-            .bouton-style:hover{
-              background-color:  #f1be4f;
-            }
-  </style>
 <header class="header_area">
 
         <div class="main-menu">

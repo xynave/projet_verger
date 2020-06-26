@@ -42,12 +42,39 @@
             .bouton-style:hover{
               background-color:  #f1be4f;
             }
-            
+            .grey_footer{
+                color: #999;
+            }
+            .grey_footer:hover{
+                color: #f1cb76;
+            }
+
 /* Fin Zone initialisation tout */
 
 
+/*Debut Zone initialisation header */
+.header_area .main-menu .navbar .navbar-brand{
+    margin-left:  2rem ;
+    color: #ecf0f1;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    margin-left:  2rem ;
+    font-family: "FrederickatheGreat"; 
+    font-weight: 500;
+    color:#ecf0f1;
+}
 
 
+.header_area .main-menu .nav-item .nav-link:hover{
+    font-family: "FrederickatheGreat";
+    font-weight: 500;
+    color:  #f1cb76;
+    border-bottom:2px solid  #f1cb76;
+}
+
+
+/* Fin Zone initialisation header */
 /* Début Zone bannière/imagerecherche.php */
             .premiere-partie{
                 width: 100%;
@@ -118,7 +145,7 @@
                 text-align: right;
                 padding-right:  2.5rem;
                
-
+            
             }
             .fa-facebook-square{
                 color: #3b5998;
@@ -143,6 +170,7 @@
                 color: #00acee;
                 padding-right:  2.5rem;
             }
+             
 
             
 
