@@ -51,7 +51,7 @@
                       </div>
                     </br>
                     <!-- zone pour créer ou reinitialiser son mot de passe -->
-                    <p>Vous n'avez pas de compte? <a  href="login.php" class="float-center">Créer un compte </a></p> 
+                    <p>Vous n avez pas de compte? <a  href="login.php" class="float-center">Créer un compte </a></p>
                     <p>Mot de passe oublié? <a  href="#" class="float-center">Réinitialiser le mot de passe </a></p> 
                         
                       
@@ -73,7 +73,7 @@
     </div>
 
     <br>
-          </Section>
+</Section>
 
         
 
@@ -90,8 +90,8 @@
 
 
 <!--jquery-->
-<script src="./js/jquery3.4.1.min.js"></script>
-<!--boostrap js file-->
-<script src="./js/bootstrap.min.js"></script>
-</body>
+       <script src="./js/jquery3.4.1.min.js"></script>
+       <!--boostrap js file-->
+       <script src="./js/bootstrap.min.js"></script>
+       </body>
 </html>

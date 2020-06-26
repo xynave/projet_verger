@@ -20,6 +20,9 @@
                       <a id="accueil" class="nav-link" href="index.php">Accueil  <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
+                      <a id="annonces" class="nav-link" href="p_annonces.php">Annonces</a>
+                    </li>
+                    <li class="nav-item">
                       <a id="creation" class="nav-link" href="creation.php">Création d'annonce</a>
                     </li>
                   </ul>
