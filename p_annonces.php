@@ -27,7 +27,7 @@
 
 
 <section class="premiere ">
- <div class="picture">
+<div class="picture">
     <div class="block">
 <!-- grosse card qui engroupe tout -->
         <div class="card  border-dark ">
@@ -46,12 +46,12 @@
     {
         echo'<a href="#" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                   <h5 class="mb-1">' . $element . '</h5>
-                       <small>3 days ago</small>
-                 </div>
-             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-             <small>Donec id elit non mi porta.</small>
-             </a>'
+                  <h5 class="mb-1">' . $element . '</h5>
+                    <small>3 days ago</small>
+                </div>
+              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              <small>Donec id elit non mi porta.</small>
+            </a>'
         ;
     }
     ?>
@@ -77,9 +77,9 @@
     </nav>
     </div>
 
- </div>
- </div>
- </div>
+</div>
+</div>
+</div>
 
 
 </section>
