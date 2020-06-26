@@ -42,7 +42,7 @@
 
         </div>
     </header>
- 
+
                           <script>
                           
                           if(window.location.pathname==='/projet_verger/index.php')
@@ -63,6 +63,10 @@
                             document.getElementById("accueil").textContent="Accueil / Carte"
                             document.getElementById("accueil").style.color = "#f1cb76";
                             document.getElementById("accueil").style.borderBottom = "2px solid #f1cb76";
+                          }else if(window.location.pathname==='/projet_verger/p_annonces.php')
+                          {
+                            document.getElementById("annonces").style.color = "#f1cb76";
+                            document.getElementById("annonces").style.borderBottom = "2px solid #f1cb76";
                           }
 
                               
