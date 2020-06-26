@@ -30,7 +30,7 @@
     <div class="block">
         <div class="card  border-dark ">
             <div class="card-header text-center" style="background-color:#1e1f1a; color: white; ">
-                Création annonce
+                Création d'annonce
               </div>
               <!-- la carte -->
               <!-- la tete de la carte -->
@@ -80,7 +80,7 @@
                           </div>
                       </div>
                     
-                    <button class="btn btn-success float-right" type="submit">Poster</button>
+                    <button class="btn bouton-style float-right" type="submit"><i class="fas fa-paper-plane"></i> Poster </button>
                   </form>
             </div>
           </div>

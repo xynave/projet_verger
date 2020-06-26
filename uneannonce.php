@@ -39,7 +39,7 @@
                     <div class="custom-control custom-switch float-right">
                         <input type="checkbox"  class="custom-control-input" id="customSwitch1">
                         <!-- mettre en favoris ou pas  -->
-                        <label class="custom-control-label h6" for="customSwitch1">Favoris</label>
+                        <label class="custom-control-label h6" for="customSwitch1">Favoris </label>
                       </div>
                       <br>
                       <br>
@@ -126,7 +126,7 @@
 
                     
                     <!-- contacter la personne  -->
-                    <button type="button" class="btn btn-success float-right" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Contacter</button>
+                    <button type="button" class="btn bouton-style float-right" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Contacter</button>
                     <!-- le modal pour le contacter qui souvre  -->
 
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -156,8 +156,8 @@
                           </div>
                           <div class="modal-footer">
                             <!--  on ferme ou envoi le message -->
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">Envoyer le message</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Fermer</button>
+                            <button type="button" class="btn btn-primary">Envoyer le message <i class="fas fa-paper-plane"></i></button>
                           </div>
                         </div>
                       </div>

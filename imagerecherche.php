@@ -1,5 +1,13 @@
 <!-- module de l'image de la bannière sur index et map -->
 <!-- dans le style on a l'image -->
+<style>
+   .bouton-style{
+                background-color: #f1cb76;
+            }
+            .bouton-style:hover{
+              background-color:  #f1be4f;
+            }
+</style>
 <section class="premiere-partie container-fluid">
   <div class="picturepresentation ">
     <div class="container " >
@@ -14,7 +22,7 @@
             <div class="input-group-text  " id="btnGroupAddon">Nom</div>
           </div>
           <input type="text" class="form-control  mr-sm-3" placeholder="Recherche" aria-label="Recherche" aria-describedby="btnGroupAddon">
-          <button class="btn  " type="submit" style="background-color: #f1cb76;">Chercher</button>
+          <button class="btn  bouton-style " type="submit"><i class="fas fa-search"></i> Chercher </button>
         </div>
         </div>
         

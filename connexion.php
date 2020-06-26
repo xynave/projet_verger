@@ -36,15 +36,16 @@
             <div class="card-body ">
                 <form>
                 <!-- zone ou on rentre son email -->
+                
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <label for="staticEmail" class="col-sm-2 col-form-label"> <i class="far fa-envelope"></i> Email</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control " id="validationDefault01"  required>
                          </div>
                       </div>
                       <!--zone ou on rentre son mot de passe  -->
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Mot de passe</label>
+                        <label for="inputPassword" class="col-sm-2 col-form-label"> <i class="fas fa-lock"></i> Mot de passe</label>
                         <div class="col-sm-10">
                           <input type="password" class="form-control" id="inputPassword">
                         </div>
@@ -55,7 +56,7 @@
                     <p>Mot de passe oublié? <a  href="#" class="float-center">Réinitialiser le mot de passe </a></p> 
                         
                       
-                    <button class="btn btn-dark float-right" type="submit">Connexion</button>
+                    <button class="btn bouton-style float-right" type="submit">Connexion</button>
                   </form>
             </div>
           </div>

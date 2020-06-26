@@ -99,7 +99,7 @@
                       </div>
 
                    <!-- si on veut modifier -->
-                    <a href="mesdonnees.php" class="btn  btn-outline-dark float-right"  type="submit">Modifier</a>
+                    <a href="mesdonnees.php" class="btn  btn-outline-dark float-right"  type="submit"> <i class="fas fa-user-edit"></i>  Modifier</a>
                   </form>
             </div>
           </div>
@@ -168,7 +168,7 @@
                                               <!-- description-->
                                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                               <!--la dernier modif -->
-                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>  <a href="#" class="btn  btn-outline-dark float-right">Gérer</a></p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>  <a href="#" class="btn  btn-outline-dark float-right">Gérer </a></p>
                                             </div>
                                           </div>
                                         </div>
@@ -254,7 +254,6 @@
                                       <div class="col-md-4">
                                         <!-- carroussel image -->
                                         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                               
                                             <ol class="carousel-indicators">
                                               <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                                               <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
@@ -304,7 +303,7 @@
                                     <div class="row no-gutters">
                                       <div class="col-md-4">
                                         <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
-                               
+                              
                                             <ol class="carousel-indicators">
                                               <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
                                               <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>

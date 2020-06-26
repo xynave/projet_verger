@@ -1,6 +1,33 @@
   <!--module la barre de navigation  -->
-<link rel="stylesheet" href="./css/style.css">
+<style>
+   .header_area .main-menu .navbar .navbar-brand{
+                margin-left:  2rem ;
+                color: #ecf0f1;
+            }
+
+            .header_area .main-menu .nav-item .nav-link{
+                margin-left:  2rem ;
+                font-family: "FrederickatheGreat"; 
+                font-weight: 500;
+                color:#ecf0f1;
+            }
+
+
+            .header_area .main-menu .nav-item .nav-link:hover{
+                font-family: "FrederickatheGreat";
+                font-weight: 500;
+                color:  #f1cb76;
+                border-bottom:2px solid  #f1cb76;
+            }
+            .bouton-style{
+                background-color: #f1cb76;
+            }
+            .bouton-style:hover{
+              background-color:  #f1be4f;
+            }
+  </style>
 <header class="header_area">
+
         <div class="main-menu">
             <!-- choix couleur barre -->
             <nav class=" navbar-expand-lg fixed-top navbar navbar-light" style="background-color:#1e1f1a; ">
@@ -29,13 +56,13 @@
                     <!-- zone de lien gauche -->
                   <form class="form-inline my-2 my-lg-0">
                       <!-- lien de recherche  -->
-                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche">
-                    <button class="btn my-2 my-sm-0" style="background-color: #f1cb76;" type="submit">Chercher</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche ">
+                    <button class="btn my-2 my-sm-0 bouton-style"  type="submit"><i class="fas fa-search"></i> Chercher </button>
                   </form>
                     <!-- lien profil -->
                   <ul class="navbar-nav ">
                     <li class="nav-item ">
-                      <a class="nav-link" id="profil" href="profil.php"> <!--   <img src="./images/profil.png" width="30" height="30" class="d-inline-block align-top" alt="">  -->
+                      <a class="nav-link" id="profil" href="profil.php">    <i class="fas fa-user-circle"></i> 
                         Profil <span class="sr-only">(current)</span></a>
                     </li>
                 </div>
@@ -48,26 +75,26 @@
                           if(window.location.pathname==='/projet_verger/index.php')
                           {
                             document.getElementById("accueil").textContent="Accueil / Liste"
-                            document.getElementById("accueil").style.color = "#f1cb76";
-                            document.getElementById("accueil").style.borderBottom = "2px solid #f1cb76";
+                            document.getElementById("accueil").style.color = " #e2cfa6";
+                            document.getElementById("accueil").style.borderBottom = "2px solid  #e2cfa6";
                           }else if(window.location.pathname==='/projet_verger/creation.php')
                           {
-                            document.getElementById("creation").style.color = "#f1cb76";
-                            document.getElementById("creation").style.borderBottom = "2px solid #f1cb76";
+                            document.getElementById("creation").style.color = " #e2cfa6";
+                            document.getElementById("creation").style.borderBottom = "2px solid  #e2cfa6";
                           }else if(window.location.pathname==='/projet_verger/profil.php')
                           {
-                            document.getElementById("profil").style.color = "#f1cb76";
-                            document.getElementById("profil").style.borderBottom = "2px solid #f1cb76";
+                            document.getElementById("profil").style.color = " #e2cfa6";
+                            document.getElementById("profil").style.borderBottom = "2px solid  #e2cfa6";
                           }else if(window.location.pathname==='/projet_verger/carte.php')
                           {
                             document.getElementById("accueil").textContent="Accueil / Carte"
-                            document.getElementById("accueil").style.color = "#f1cb76";
-                            document.getElementById("accueil").style.borderBottom = "2px solid #f1cb76";
+                            document.getElementById("accueil").style.color = " #e2cfa6";
+                            document.getElementById("accueil").style.borderBottom = "2px solid  #e2cfa6";
                           }else if(window.location.pathname==='/projet_verger/p_annonces.php')
                           {
-                            document.getElementById("annonces").style.color = "#f1cb76";
-                            document.getElementById("annonces").style.borderBottom = "2px solid #f1cb76";
+                            document.getElementById("annonces").style.color = " #e2cfa6";
+                            document.getElementById("annonces").style.borderBottom = "2px solid  #e2cfa6";
                           }
 
                               
-                          </script>   
+                          </script>  

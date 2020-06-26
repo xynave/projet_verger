@@ -266,7 +266,7 @@
                       </div>
                     </div>
                       <!-- validation de l'inscription -->
-                    <button class="btn btn-dark float-right" type="submit">Inscription</button>
+                    <button class="btn bouton-style float-right" type="submit">Inscription <i class="fas fa-paper-plane"></i></button>
                   </form>
             </div>
           </div>

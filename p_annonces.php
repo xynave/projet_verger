@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/all.min.css">
 
     <!--custom css file-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
     <div class="block">
 <!-- grosse card qui engroupe tout -->
         <div class="card  border-dark ">
-            <div class="card-header text-center" style="background-color:#1e1f1a;  color: white; ">
+            <div class="card-header  text-center" style="background-color:#1e1f1a;  color: white; ">
                 Annonces
               </div>
 
@@ -48,10 +48,9 @@
 
 
                 <!-- noveau item-->
-                                                      <div class="card mb-3" >
+                                                      <div class="card mb-3 mr-3 ml-3" >
                                                         <div class="row no-gutters">
                                                           <div class="col-md-4">
-                                                         
                                                             <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
                                                                 <ol class="carousel-indicators">
                                                                   <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
@@ -86,9 +85,9 @@
                                                             <div class="card-body">
 
                                                               <h5 class="card-title">' . $element . '</h5>
-                                                              <small class="mr-3">3 days ago</small>
                                                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                                              <a href="uneannonce.php" class="btn  btn-outline-success float-right">Voir</a>
+                                                              <br>
+                                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>  <a href="uneannonce.php" class="btn  btn-outline-dark float-right">Voir</a></p>
 
                                                             </div>
                                                           </div>
