@@ -45,10 +45,7 @@
     foreach($prenoms as $element)
     {
         echo'
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1 ml-3">' . $element . '</h5>
-                    <small class="mr-3">3 days ago</small>
-                </div>
+
 
                 <!-- noveau item-->
                                                       <div class="card mb-3" >
@@ -87,8 +84,9 @@
                                                           </div>
                                                           <div class="col-md-8">
                                                             <div class="card-body">
-                                                                <span class="badge badge-primary badge-pilla float-right">14</span>
-                                                              <h5 class="card-title">Card title</h5>
+
+                                                              <h5 class="card-title">' . $element . '</h5>
+                                                              <small class="mr-3">3 days ago</small>
                                                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                                               <a href="uneannonce.php" class="btn  btn-outline-success float-right">Voir</a>
 
