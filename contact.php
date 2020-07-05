@@ -57,8 +57,8 @@
                                 <label for="exampleFormControlTextarea1">Message :</label>
                                 <textarea class="form-control" name="message" id="message" rows="3" placeholder="Saisir votre texte"></textarea>
                             </div>
-
-                            <input type="submit" value="Envoyer" class="envoyer " />
+                            <button class="btn bouton-style float-right" value="Envoyer" type="submit"><i class="fas fa-paper-plane"></i> Envoyer </button>
+                            
                         </form>
                     </div>
                 </div>
