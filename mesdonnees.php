@@ -244,7 +244,7 @@
                   </div>
                 </div>
                 <!--valider les infos  -->
-                <button class="btn btn-success float-right" type="submit"> <i class="fas fa-check"></i> Valider </button>
+                <button href="profil.php" class="btn btn-success float-right" type="submit"> <i class="fas fa-check"></i> Valider </button>
               </form>
             </div>
 

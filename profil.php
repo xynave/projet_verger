@@ -170,7 +170,7 @@
                       <!-- description-->
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <!--la dernier modif -->
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <a href="#" class="btn  btn-outline-dark float-right">Gérer </a></p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <a href="monannonce.php" class="btn  btn-outline-dark float-right">Gérer </a></p>
                     </div>
                   </div>
                 </div>
@@ -215,13 +215,12 @@
                       <span class="badge badge-primary badge-pilla float-right">14</span>
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <a href="#" class="btn  btn-outline-dark float-right">Gérer</a></p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <a href="monannonce.php" class="btn  btn-outline-dark float-right">Gérer</a></p>
 
                     </div>
                   </div>
                 </div>
               </div>
-
             </form>
           </div>
         </div>
@@ -291,7 +290,7 @@
                       <!-- descriptions  -->
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <!--  dates dernieres modifications -->
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <a href="#" class="btn  btn-outline-dark float-right">Gérer</a></p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <a href="uneannonce.php" class="btn  btn-outline-dark float-right">Gérer</a></p>
                     </div>
                   </div>
                 </div>
@@ -338,7 +337,7 @@
                       <span class="badge badge-warning badge-pilla float-right"><i class="fas fa-star"></i></span>
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <a href="#" class="btn  btn-outline-dark float-right">Gérer</a></p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small> <a href="uneannonce.php" class="btn  btn-outline-dark float-right">Gérer</a></p>
 
                     </div>
                   </div>

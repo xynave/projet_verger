@@ -9,7 +9,7 @@
         <a href=""><i class="footer_icon_hover icon is-size-4 fab fa-twitter"></i></a>
         <hr width="50%" color=" #999">
         <a href="contact.php" class="grey_footer"><i class="fas fa-envelope"></i> Contact</a>
-        <hr width="25%" color=" #999">
+        <hr width="50%" color=" #999">
         <a class="grey_footer" href=""> <i class="fas fa-industry"></i> Entreprise </a>
         <hr width="50%" color=" #999">
         <a class="grey_footer" href=""> <i class="fas fa-user-shield"></i> Politique de Protection des données personnelles </a>

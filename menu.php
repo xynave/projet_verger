@@ -12,7 +12,7 @@
         </a>
         <!-- bouton toggle -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon btn-primary"></span>
+        <span class="toggle-color"><i class="fas fa-bars"></i></span>
         </button>
         <!--zone initialisation lien gauche  -->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -28,11 +28,7 @@
             </li>
           </ul>
           <!-- zone de lien gauche -->
-          <form class="form-inline my-2 my-lg-0">
-            <!-- lien de recherche  -->
-            <input class="form-control mr-sm-2" type="search" placeholder="Recherche ">
-            <button class="btn my-2 my-sm-0 bouton-style" type="submit"><i class="fas fa-search"></i> Chercher </button>
-          </form>
+          
           <!-- lien profil -->
           <ul class="navbar-nav ">
             <li class="nav-item ">

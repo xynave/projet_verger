@@ -52,13 +52,14 @@ body {
     background-color: #f1be4f;
 }
 
-.grey_footer {
-    color: #999;
+.toggle-color{
+    color: white;
 }
 
-.grey_footer:hover {
+.toggle-color:hover{
     color: #f1cb76;
 }
+
 
 /* Fin Zone initialisation tout */
 
@@ -92,8 +93,25 @@ body {
     height: 800px;
     background-size: cover;
     background-image: url(../images/box-of-harvest-vegetables.jpg);
-
 }
+@media (max-width: 1100px) {
+    .premiere-partie {
+        
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-image: url(../images/box-of-harvest-vegetables.jpg);
+    };
+    }
+@media (max-width: 800px) {
+    .premiere-partie {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-image: url(../images/box-of-harvest-vegetables.jpg);
+    };
+    }
+/*Fin Zone image */
 
 .premiere-partie .picturepresentation {
 
@@ -168,31 +186,38 @@ body {
 
 .fa-facebook-square {
     color: #3b5998;
-    padding-right: 2.5rem;
+    padding-right: 2rem;
 }
 
 .footer_icon_hover:hover {
 
     color: #f1cb76;
-    padding-right: 2.5rem;
+    padding-right: 2rem;
 
 }
 
 .fa-instagram {
     color: #c27832;
-    padding-right: 2.5rem;
+    padding-right: 2rem;
 }
 
 .fa-linkedin {
     color: #0e76a8;
-    padding-right: 2.5rem;
+    padding-right: 2rem;
 }
 
 .fa-twitter {
     color: #00acee;
-    padding-right: 2.5rem;
+    padding-right: 2rem;
+}
+.grey_footer {
+    color: #999;
 }
 
+.grey_footer:hover {
+    color: #f1cb76;
+    text-decoration: none;
+}
 
 
 

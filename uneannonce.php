@@ -137,9 +137,6 @@
                     <div class="modal-header">
                       <!-- le header du modal  -->
                       <h5 class="modal-title" id="exampleModalLabel">Nouveau message</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
                     </div>
                     <!--  le body du modal -->
                     <div class="modal-body">
@@ -158,7 +155,7 @@
                     </div>
                     <div class="modal-footer">
                       <!--  on ferme ou envoi le message -->
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Fermer</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> Fermer</button>
                       <button type="button" class="btn btn-primary">Envoyer le message <i class="fas fa-paper-plane"></i></button>
                     </div>
                   </div>
