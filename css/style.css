@@ -3,175 +3,209 @@
 
 
 /* Début Zone initialisation tout */
-            body{
-                padding:0;
-                margin:0;
-                font-family: "FrederickatheGreat"; 
-            }
-            .fond-noir{
-                background-color:#1e1f1a;
-                color:white;
-            }
-            .fond-noir:hover{
-                background-color:#ffffff;
-                color:black;
-            }
-            .zone{
-                background-color: rgb(245,241,235);
-            }
-            .deplacer{
-                margin-left: 5rem;
-                margin-right: 5rem;
-            }
-            
-            .size-title{
-                font-family: "FrederickatheGreat"; 
-            }
-            .h4{
-                margin-top: -10px;
-            }
-            .color{
-            color: #f1cb76;
-            }
-            .centered{
-            text-align: center;
-            }
-            .bouton-style{
-                background-color: #f1cb76;
-            }
-            .bouton-style:hover{
-              background-color:  #f1be4f;
-            }
-            .grey_footer{
-                color: #999;
-            }
-            .grey_footer:hover{
-                color: #f1cb76;
-            }
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "FrederickatheGreat";
+}
+
+.fond-noir {
+    background-color: #1e1f1a;
+    color: white;
+}
+
+.fond-noir:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.zone {
+    background-color: rgb(245, 241, 235);
+}
+
+.deplacer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.size-title {
+    font-family: "FrederickatheGreat";
+}
+
+.h4 {
+    margin-top: -10px;
+}
+
+.color {
+    color: #f1cb76;
+}
+
+.centered {
+    text-align: center;
+}
+
+.bouton-style {
+    background-color: #f1cb76;
+}
+
+.bouton-style:hover {
+    background-color: #f1be4f;
+}
+
+.grey_footer {
+    color: #999;
+}
+
+.grey_footer:hover {
+    color: #f1cb76;
+}
 
 /* Fin Zone initialisation tout */
 
 
 /*Debut Zone initialisation header */
-.header_area .main-menu .navbar .navbar-brand{
-    margin-left:  2rem ;
+.header_area .main-menu .navbar .navbar-brand {
+    margin-left: 2rem;
     color: #ecf0f1;
 }
 
-.header_area .main-menu .nav-item .nav-link{
-    margin-left:  2rem ;
-    font-family: "FrederickatheGreat"; 
+.header_area .main-menu .nav-item .nav-link {
+    margin-left: 2rem;
+    font-family: "FrederickatheGreat";
     font-weight: 500;
-    color:#ecf0f1;
+    color: #ecf0f1;
 }
 
 
-.header_area .main-menu .nav-item .nav-link:hover{
+.header_area .main-menu .nav-item .nav-link:hover {
     font-family: "FrederickatheGreat";
     font-weight: 500;
-    color:  #f1cb76;
-    border-bottom:2px solid  #f1cb76;
+    color: #f1cb76;
+    border-bottom: 2px solid #f1cb76;
 }
 
 
 /* Fin Zone initialisation header */
 /* Début Zone bannière/imagerecherche.php */
-            .premiere-partie{
-                width: 100%;
-                height: 800px;
-                background-size: cover;
-                background-image: url(../images/box-of-harvest-vegetables.jpg);
-                
-            }
-            .premiere-partie .picturepresentation{
-                
-                padding-top: 17%;
-                padding-left: 10%;
-                padding-right: 10%;
-            }
-            .premiere-partie .picturepresentation .marge-top{
-                margin-top: 200px;
-            }
-            .premiere-partie .picturepresentation .ok .image-start 
-            {
-            float: center;
-            padding-top: -15%;
-            }
+.premiere-partie {
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-image: url(../images/box-of-harvest-vegetables.jpg);
+
+}
+
+.premiere-partie .picturepresentation {
+
+    padding-top: 17%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.premiere-partie .picturepresentation .marge-top {
+    margin-top: 200px;
+}
+
+.premiere-partie .picturepresentation .ok .image-start {
+    float: center;
+    padding-top: -15%;
+}
+
 /* FIN Zone bannière/imagerecherche.php */
 
-.premiere .picture{
-   background-color: rgb(245,241,235);
-  
-   /* width: 100%;
+.premiere .picture {
+    background-color: rgb(245, 241, 235);
+
+    /* width: 100%;
     height: 1200px;
     background-size: 2000px;
     background-image: url(../images/apple-2788638__480[1].jpg);*/
 }
-.block{
-    
+
+.block {
+
     padding-top: 10%;
     padding-left: 10%;
     padding-right: 10%;
-    
+
 }
-.plus .supplement{
-    background-color: rgb(245,241,235);
+
+.plus .supplement {
+    background-color: rgb(245, 241, 235);
     height: 250px;
     width: 100%;
 }
 
 /* Début Zone map */
-            #map{
-                width: 100%;
-                height:90vh;
-                z-index: 1;
-            }
-            .mappi{
-                
-                margin-left: 0;
-                margin-right: 0;
-            }
-            
+#map {
+    width: 100%;
+    height: 90vh;
+    z-index: 1;
+}
+
+.mappi {
+
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* FIN Zone map */
 
 /* Début Zone footer */
-            .footer{
-                padding: 2.5rem ;
-                color: #999;
-                border-top: .05rem solid #e5e5e5;
-                background-color:#1e1f1a;
-            }
-            .position_left{
-                text-align: right;
-                padding-right:  2.5rem;
-               
-            
-            }
-            .fa-facebook-square{
-                color: #3b5998;
-                padding-right:  2.5rem;
-            }
-            .footer_icon_hover:hover{
-              
-               color: #f1cb76;
-                padding-right:  2.5rem;
-                
-            }
+.footer {
+    padding: 2.5rem;
+    color: #999;
+    border-top: .05rem solid #e5e5e5;
+    background-color: #1e1f1a;
+}
 
-            .fa-instagram{
-               color: #c27832;
-               padding-right:  2.5rem;
-            }
-            .fa-linkedin{ 
-                color: #0e76a8;
-                padding-right:  2.5rem;
-            }
-            .fa-twitter{ 
-                color: #00acee;
-                padding-right:  2.5rem;
-            }
-             
+.position_left {
+    text-align: right;
+    padding-right: 2.5rem;
 
-            
+
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+    padding-right: 2.5rem;
+}
+
+.footer_icon_hover:hover {
+
+    color: #f1cb76;
+    padding-right: 2.5rem;
+
+}
+
+.fa-instagram {
+    color: #c27832;
+    padding-right: 2.5rem;
+}
+
+.fa-linkedin {
+    color: #0e76a8;
+    padding-right: 2.5rem;
+}
+
+.fa-twitter {
+    color: #00acee;
+    padding-right: 2.5rem;
+}
+
+
+
 
 /* FIN Zone footer */
+
+/* Début Zone contact */
+.envoyer{
+    float: right; 
+    background-color:#198d40;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+}
+
+/* FIN Zone contact */

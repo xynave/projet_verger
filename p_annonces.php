@@ -1,50 +1,49 @@
 <!-- page connexion -->
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>tuto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tuto</title>
 
-    <!--boostrap css file-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!--boostrap css file-->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-    <!--fonat awesome icons-->
-    <link rel="stylesheet" href="./css/all.min.css">
+  <!--fonat awesome icons-->
+  <link rel="stylesheet" href="./css/all.min.css">
 
-    <!--custom css file-->
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <!--custom css file-->
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 
 <body>
 
 
-    <!--==================Start header Area==========================-->
-    <?php include("menu.php");?>
-    <!--==================END header Area============================-->
+  <!--==================Start header Area==========================-->
+  <?php include("menu.php"); ?>
+  <!--==================END header Area============================-->
 
 
-<section class="premiere ">
-<div class="picture">
-    <div class="block">
-<!-- grosse card qui engroupe tout -->
+  <section class="premiere ">
+    <div class="picture">
+      <div class="block">
+        <!-- grosse card qui engroupe tout -->
         <div class="card  border-dark ">
-            <div class="card-header  text-center" style="background-color:#1e1f1a;  color: white; ">
-                Annonces
-              </div>
+          <div class="card-header  text-center" style="background-color:#1e1f1a;  color: white; ">
+            Annonces
+          </div>
 
 
-    <!----====== Annonces ======---->
+          <!----====== Annonces ======---->
 
-    <div class="list-group my-2">
-    <?php
-    $prenoms = array ('François', 'Michel', 'Nicole', 'Véronique', 'Benoît');
+          <div class="list-group my-2">
+            <?php
+            $prenoms = array('François', 'Michel', 'Nicole', 'Véronique', 'Benoît');
 
-    foreach($prenoms as $element)
-    {
-        echo'
+            foreach ($prenoms as $element) {
+              echo '
 
 
                 <!-- noveau item-->
@@ -94,56 +93,56 @@
                                                         </div>
                                                       </div>
 
-              '
-        ;
-    }
-    ?>
+              ';
+            }
+            ?>
+          </div>
+
+          <!----====== Pagination ======---->
+
+          <div class="card-center ">
+            <nav aria-label="Page de navigation ">
+              <ul class="pagination " style="margin-left: auto; margin-right: auto; width:15em; ">
+                <li class="page-item  ">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
     </div>
 
-    <!----====== Pagination ======---->
 
-    <div class="card-center ">
-    <nav aria-label="Page de navigation ">
-      <ul class="pagination " style="margin-left: auto; margin-right: auto; width:15em; " >
-        <li class="page-item  ">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item active" aria-current="page">
-          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
-    </nav>
-    </div>
+  </section>
 
-</div>
-</div>
-</div>
-
-
-</section>
-
-<section class="plus">
+  <section class="plus">
 
     <div class="supplement">
 
     </div>
 
-</Section>
+  </Section>
 
 
-    <!--==================Start footer Area==========================-->
-    <?php include("footer.php");?>
-    <!--==================END footer Area============================-->
+  <!--==================Start footer Area==========================-->
+  <?php include("footer.php"); ?>
+  <!--==================END footer Area============================-->
 
 
-<!--jquery-->
-<script src="./js/jquery3.4.1.min.js"></script>
-<!--boostrap js file-->
-<script src="./js/bootstrap.min.js"></script>
+  <!--jquery-->
+  <script src="./js/jquery3.4.1.min.js"></script>
+  <!--boostrap js file-->
+  <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
