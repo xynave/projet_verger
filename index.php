@@ -1,3 +1,14 @@
+<!--- Session --->
+
+<?php
+// On démarre toujours la  session avant le code HTML
+session_start();
+
+// Quelques variables de session dans $_SESSION
+$_SESSION['type'] = 'Invité';
+$_SESSION['nom'] = 'l\'invité';
+?>
+
 <!-- page accueil -->
 <!DOCTYPE html>
 <html>

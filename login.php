@@ -1,3 +1,7 @@
+<?php
+session_start(); // On démarre la session AVANT toute chose
+?>
+
 <!-- page création de profil -->
 <!DOCTYPE html>
 <html>

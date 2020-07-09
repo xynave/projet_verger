@@ -1,3 +1,7 @@
+  <?php
+  session_start(); // On démarre la session AVANT toute chose
+  ?>
+
   <!-- page une annoce qui nous appartient -->
   <!DOCTYPE html>
   <html>

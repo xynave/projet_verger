@@ -1,3 +1,9 @@
+<?php
+session_start(); // On démarre la session AVANT toute chose
+
+?>
+
+
 <!-- page connexion -->
 <!DOCTYPE html>
 <html>
@@ -34,7 +40,6 @@
           <div class="card-header  text-center" style="background-color:#1e1f1a;  color: white; ">
             Annonces
           </div>
-
 
           <!----====== Annonces ======---->
 
