@@ -46,7 +46,7 @@ session_start(); // On démarre la session AVANT toute chose
               <div class="form-group row">
                 <label for="staticEmail" class="col-sm-2 col-form-label"> <i class="far fa-envelope"></i> Email</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control " id="validationDefault01" required>
+                  <input type="email" class="form-control " id="validationDefault01" required>
                 </div>
               </div>
               <!--zone ou on rentre son mot de passe  -->

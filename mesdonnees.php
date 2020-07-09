@@ -220,7 +220,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text border-dark" id="inputGroupPrepend2">@</span>
                       </div>
-                      <input type="text" class="form-control border-dark" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                      <input type="email" class="form-control border-dark" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
                     </div>
                   </div>
                 </div>
@@ -233,7 +233,7 @@
                   <!-- choix code postal -->
                   <div class="col-md-3 mb-3">
                     <label for="validationDefault05">Code postal</label>
-                    <input type="text" class="form-control border-dark" id="validationDefault05" required>
+                    <input type="number" class="form-control border-dark" id="validationDefault05" required>
                   </div>
                 </div>
                 <!-- choix adresse -->
