@@ -1,6 +1,8 @@
 <?php
 session_start(); // On démarre la session AVANT toute chose
+$bdd = new PDO('mysql:host=localhost;dbname=leveraged;charset=utf8', 'root', 'root');
 
+$annonces = $bdd->query('SELECT * FROM annonces');
 ?>
 
 
@@ -40,14 +42,16 @@ session_start(); // On démarre la session AVANT toute chose
           <div class="card-header  text-center" style="background-color:#1e1f1a;  color: white; ">
             Annonces
           </div>
-
           <!----====== Annonces ======---->
 
           <div class="list-group my-2">
-            <?php
-            $prenoms = array('François', 'Michel', 'Nicole', 'Véronique', 'Benoît');
+          <?php
+          while ($donnees = $annonces->fetch())
+          {
 
-            foreach ($prenoms as $element) {
+
+
+
               echo '
 
 
@@ -88,7 +92,7 @@ session_start(); // On démarre la session AVANT toute chose
                                                           <div class="col-md-8">
                                                             <div class="card-body">
 
-                                                              <h5 class="card-title">' . $element . '</h5>
+                                                              <h5 class="card-title">' . $donnees['titre_annonce'] . '</h5>
                                                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                                               <br>
                                                               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>  <a href="uneannonce.php" class="btn  btn-outline-dark float-right">Voir</a></p>
@@ -97,8 +101,8 @@ session_start(); // On démarre la session AVANT toute chose
                                                           </div>
                                                         </div>
                                                       </div>
+                                                      ';
 
-              ';
             }
             ?>
           </div>
@@ -151,3 +155,10 @@ session_start(); // On démarre la session AVANT toute chose
 </body>
 
 </html>
+
+
+<!--- Fin de traitement de la bdd ----->
+
+<?php
+$reponse->closeCursor(); // Termine le traitement de la requête
+?>
