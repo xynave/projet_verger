@@ -40,17 +40,17 @@
           <!-- la carte -->
           <!-- la tete de la carte -->
           <div class="card-body ">
-            <form>
+            <form  method="POST" action="addBdd.php">
               <?php include("categorie.php"); ?>
+               <!-- on rentre les informations produit -->
+               <div class="form-group">
+            <label for="exampleFormControlTextarea1">Titre de l'annonce </label>
+                <input name="titre" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
               <!-- on rentre la description du produit -->
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Description du produit </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <!-- on rentre les informations produit -->
-              <div class="form-group">
-            <label for="exampleFormControlTextarea1">Information général </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <!--  on rentre les photos-->
               <div class="form-group">
@@ -69,23 +69,24 @@
               <div class="form-row">
                 <div class="col-md-6 mb-3">
                   <label for="validationDefault03">Ville</label>
-                  <input type="text" class="form-control border-dark" id="validationDefault03" required>
+                  <input name="ville" type="text" class="form-control border-dark" id="validationDefault03" required>
                 </div>
                 <!-- on rentre le code postal -->
                 <div class="col-md-3 mb-3">
                   <label for="validationDefault05">Code postal</label>
-                  <input type="text" class="form-control border-dark" id="validationDefault05" required>
+                  <input name="code_postal" type="number" min="01000" max="99999" class="form-control border-dark" id="validationDefault05" required>
                 </div>
               </div>
               <!-- on rajout adresse -->
               <div class="form-row ">
                 <div class="col-md-6 mb-3">
                   <label for="validationDefault03">Adresse</label>
-                  <input type="text" class="form-control border-dark" id="validationDefault03" required>
+                  <input name="adresse" type="text" class="form-control border-dark" id="validationDefault03" required>
                 </div>
               </div>
 
               <button class="btn bouton-style float-right" type="submit"><i class="fas fa-paper-plane"></i> Poster </button>
+              <!--$sql = "INSERT INTO `annonces` (`ID_annonce`, `titre_annonce`, `description_annonce`, `date_annonce`, `type`, `variete`) VALUES (NULL, \'radis magnifique\', \'de magnifique radis de mon jardin\', \'2020-07-11\', \'legume\', \'radis\')";-->
             </form>
           </div>
         </div>

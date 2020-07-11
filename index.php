@@ -61,6 +61,7 @@
 
       </br>
       <!-- carroussel d'image -->
+      
       <div class="center">
         <!-- on choisi les nombres de petites cartes quand on reduit la fenetre -->
         <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
@@ -72,8 +73,11 @@
               echo '
           <div class="col lg-4">
             <div class="card shadow-sm mb-4" style="width: 15rem; height:25rem;">
-
+            <div class="card-header">
+            <p class="card-text"> <strong>' . $donnees['variete'] . ' </strong> </p>
+          </div>
               <div id="carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" class="carousel slide" data-ride="carousel">
+              
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
@@ -98,7 +102,7 @@
 
               <div class="card-body ">
                 <h5 class="card-title">Distance</h5>
-                <p class="card-text">' . $donnees['description_annonce'] . '</p>
+                <p class="card-text"> ' . $donnees['description_annonce'] . '</p>
               </div>
               <div class="card-footer " style=" background-color:white;">
               <a href="uneannonce.php" class="btn   btn-outline-dark float-right">Voir</a>

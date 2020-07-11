@@ -51,7 +51,11 @@
     } else if (window.location.pathname === '/projet_verger/profil.php') {
       document.getElementById("profil").style.color = " #e2cfa6";
       document.getElementById("profil").style.borderBottom = "2px solid  #e2cfa6";
-    } else if (window.location.pathname === '/projet_verger/carte.php') {
+    } else if (window.location.pathname === '/projet_verger/monannonce.php') {
+      document.getElementById("profil").style.color = " #e2cfa6";
+      document.getElementById("profil").style.borderBottom = "2px solid  #e2cfa6";
+    }
+     else if (window.location.pathname === '/projet_verger/carte.php') {
       document.getElementById("accueil").textContent = "Accueil / Carte"
       document.getElementById("accueil").style.color = " #e2cfa6";
       document.getElementById("accueil").style.borderBottom = "2px solid  #e2cfa6";

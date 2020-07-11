@@ -5,11 +5,11 @@
     <div class=" input-group-prepend">
       <label class="input-group-text" for="inputGroupSelect01">Type</label>
     </div>
-    <select class="custom-select" id="inputGroupSelect01">
-      <option value="0">Choisis un type de produit</option>
-      <option value="1">Fruit</option>
-      <option value="2">Légume</option>
-      <option value="3">Autres</option>
+    <select class="custom-select" name="type" id="inputGroupSelect01">
+      <option value="choisis">Choisis un type de produit</option>
+      <option value="fruit">Fruit</option>
+      <option value="legume">Légume</option>
+      <option value="autres">Autres</option>
     </select>
   </div>
 </div>
@@ -19,10 +19,10 @@
     <div class="input-group-prepend">
       <label class="input-group-text" for="inputGroupSelect02">Variété</label>
     </div>
-    <select class="custom-select" id="inputGroupSelect02">
-      <td>
+    <select class="custom-select" name="variete" id="inputGroupSelect02">
+    
         <option selected>Choisis une variété</option>
-      </td>
+      
     </select>
   </div>
 </div>
@@ -40,7 +40,7 @@
         .remove()
         .end()
       /*on rajoute des nouvelles fonctions en fonctions de celles que l'on a choisi */
-      if ($("#inputGroupSelect01").children("option:selected").val() === '1') {
+      if ($("#inputGroupSelect01").children("option:selected").val() === 'fruit') {
         $('#inputGroupSelect02')
           .append('<option  value="Choisis_ta_variete">Choisis ta variété</option>')
           .append('<option value="Pomme">Pomme</option>')
@@ -50,20 +50,20 @@
       /// jquerify the DOM object 'o' so we can use the html method
         $(o).html("option text");
         $("#inputGroupSelect02").append(o);
-      } else if ($("#inputGroupSelect01").children("option:selected").val() === '2') {
+      } else if ($("#inputGroupSelect01").children("option:selected").val() === 'legume') {
         $('#inputGroupSelect02')
           .append('<option  value="Choisis_ta_variete">Choisis ta variété</option>')
           .append('<option value="Courgette">Courgette</option>')
-          .append('<option value="Carotte">Carrotte</option>')
+          .append('<option value="Carotte">Carotte</option>')
           .append('<option value="Radis">Radis</option>')
-      } else if ($("#inputGroupSelect01").children("option:selected").val() === '3') {
+      } else if ($("#inputGroupSelect01").children("option:selected").val() === 'autres') {
         $('#inputGroupSelect02')
           .append('<option  value="Choisis_ta_variete">Choisis ta variété</option>')
           .append('<option value="Oeuf">Oeuf</option>')
           .append('<option value="Noix">Noix</option>')
-      } else if ($("#inputGroupSelect01").children("option:selected").val() === '0') {
+      } else if ($("#inputGroupSelect01").children("option:selected").val() === 'choisis') {
         $('#inputGroupSelect02')
-          .append('<option  value="Choisis_ta_variete">Choisis ta variété</option>')
+          .append('<option  value="Choisis_une_variete">Choisis une variété</option>')
       }
     });
   });

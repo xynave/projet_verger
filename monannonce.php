@@ -44,7 +44,12 @@
               <form>
                 <!-- intégration module categorie -->
                 <?php include("categorie.php"); ?>
-
+                 <!-- le titre -->
+                 <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Titre de l'annonce </label>
+                  <imput class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                </br>
                 <p>Les photos:</p>
                 <!-- les photos du produits -->
                 <div class="card-deck">
@@ -85,12 +90,6 @@
                 <!-- description du produit -->
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Description du produit </label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                </br>
-                <!-- les information general -->
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Information général </label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 </br>

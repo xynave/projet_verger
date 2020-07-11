@@ -73,7 +73,16 @@
               <br>
               <!--  produit  -->
               <h5>Le produit:</h5>
-
+              <!--  info general -->
+              <div class="form-row">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Titre</label>
+                  </div>
+                  <input class="form-control" type="text" placeholder="Titre" readonly>
+                </div>
+              </div>
+              </br>
               <div class="card-deck">
 
                 <div class="row justify-content-center">
@@ -114,16 +123,7 @@
               </div>
 
               </br>
-              <!--  info general -->
-              <div class="card">
-                <h5 class="card-header ">Information général</h5>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-
-
-              </br>
+              
 
 
 
