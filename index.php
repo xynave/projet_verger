@@ -1,13 +1,4 @@
-<!--- Session --->
-
-<?php
-// On démarre toujours la  session avant le code HTML
-session_start();
-
-// Quelques variables de session dans $_SESSION
-$_SESSION['type'] = 'Invité';
-$_SESSION['nom'] = 'l\'invité';
-?>
+<?php include("m_open_bdd.php"); ?>
 
 <!-- page accueil -->
 <!DOCTYPE html>
@@ -73,115 +64,32 @@ $_SESSION['nom'] = 'l\'invité';
       <div class="center">
         <!-- on choisi les nombres de petites cartes quand on reduit la fenetre -->
         <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-          <div class="col lg-4">
-            <!-- la carte du carroussel -->
-            <div class="card shadow-sm mb-4" style="width: 15rem;">
-
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <!--  les data c'est pour pouvoir tourner correctement les images-->
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <!-- image  -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/Bramley's_Seedling_Apples[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <!--bouton pour changer les images   -->
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-
-              <!--  description du produit-->
-              <div class="card-body ">
-                <h5 class="card-title">Distance</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="uneannonce.php" class="btn btn-outline-dark float-right">Voir</a>
-              </div>
-            </div>
-          </div>
-          <br>
-          <!-- nouvelle carte  -->
-          <div class="col lg-4">
-            <div class="card shadow-sm mb-4" style="width: 15rem;">
-
-              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/Bramley's_Seedling_Apples[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-
-
-              <div class="card-body ">
-                <h5 class="card-title">Distance</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="uneannonce.php" class="btn  btn-outline-dark float-right">Voir</a>
-              </div>
-            </div>
-          </div>
+         
 
           <!-- nouvelle carte  -->
+          <?php
+            while ($donnees = $annonces->fetch()) {
+              echo '
           <div class="col lg-4">
-            <div class="card shadow-sm mb-4" style="width: 15rem;">
+            <div class="card shadow-sm mb-4" style="width: 15rem; height:25rem;">
 
-              <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-                </ol>
+              <div id="carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/Bramley's_Seedling_Apples[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
+                    <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -190,51 +98,17 @@ $_SESSION['nom'] = 'l\'invité';
 
               <div class="card-body ">
                 <h5 class="card-title">Distance</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="uneannonce.php" class="btn   btn-outline-dark float-right">Voir</a>
+                <p class="card-text">' . $donnees['description_annonce'] . '</p>
+              </div>
+              <div class="card-footer " style=" background-color:white;">
+              <a href="uneannonce.php" class="btn   btn-outline-dark float-right">Voir</a>
               </div>
             </div>
           </div>
-
-          <!-- nouvelle carte  -->
-          <div class="col lg-4">
-            <div class="card shadow-sm mb-4" style="width: 15rem;">
-
-              <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/Bramley's_Seedling_Apples[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-
-
-              <div class="card-body ">
-                <h5 class="card-title">Distance</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="uneannonce.php" class="btn   btn-outline-dark float-right">Voir</a>
-              </div>
-            </div>
-          </div>
+          ';
+            }
+            ?>
+          
         </div>
 
       </div>
@@ -450,3 +324,6 @@ $_SESSION['nom'] = 'l\'invité';
 </body>
 
 </html>
+<?php
+$annonces->closeCursor(); // Termine le traitement de la requête
+?>

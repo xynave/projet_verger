@@ -1,11 +1,4 @@
-<?php
-session_start(); // On démarre la session AVANT toute chose
-$bdd = new PDO('mysql:host=localhost;dbname=leveraged;charset=utf8', 'root', '',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-
-$annonces = $bdd->query('SELECT * FROM annonces');
-?>
-
-
+<?php include("m_open_bdd.php"); ?>
 <!-- page connexion -->
 <!DOCTYPE html>
 <html>
@@ -46,7 +39,6 @@ $annonces = $bdd->query('SELECT * FROM annonces');
 
           <div class="list-group my-2">
             <?php
-            $compte=0;
             while ($donnees = $annonces->fetch()) {
               echo '
 
@@ -89,7 +81,7 @@ $annonces = $bdd->query('SELECT * FROM annonces');
                         <div class="card-body">
 
                           <h5 class="card-title">' . $donnees['titre_annonce'] . '</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">' . $donnees['description_annonce'] . '</p>
                           <br>
                           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>  <a href="uneannonce.php" class="btn  btn-outline-dark float-right">Voir</a></p>
 
