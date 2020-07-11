@@ -42,25 +42,30 @@
       /*on rajoute des nouvelles fonctions en fonctions de celles que l'on a choisi */
       if ($("#inputGroupSelect01").children("option:selected").val() === '1') {
         $('#inputGroupSelect02')
-          .append('<option  value="Choisis_ta_variété">Choisis ta variété</option>')
+          .append('<option  value="Choisis_ta_variete">Choisis ta variété</option>')
           .append('<option value="Pomme">Pomme</option>')
           .append('<option value="Poire">Poire</option>')
           .append('<option value="Abricot">Abricot</option>')
+          var o = new Option("option text", "value");
+      /// jquerify the DOM object 'o' so we can use the html method
+        $(o).html("option text");
+        $("#inputGroupSelect02").append(o);
       } else if ($("#inputGroupSelect01").children("option:selected").val() === '2') {
         $('#inputGroupSelect02')
-          .append('<option  value="Choisis_ta_variété">Choisis ta variété</option>')
+          .append('<option  value="Choisis_ta_variete">Choisis ta variété</option>')
           .append('<option value="Courgette">Courgette</option>')
           .append('<option value="Carotte">Carrotte</option>')
           .append('<option value="Radis">Radis</option>')
       } else if ($("#inputGroupSelect01").children("option:selected").val() === '3') {
         $('#inputGroupSelect02')
-          .append('<option  value="Choisis_ta_variété">Choisis ta variété</option>')
+          .append('<option  value="Choisis_ta_variete">Choisis ta variété</option>')
           .append('<option value="Oeuf">Oeuf</option>')
           .append('<option value="Noix">Noix</option>')
       } else if ($("#inputGroupSelect01").children("option:selected").val() === '0') {
         $('#inputGroupSelect02')
-          .append('<option  value="Choisis_ta_variété">Choisis ta variété</option>')
+          .append('<option  value="Choisis_ta_variete">Choisis ta variété</option>')
       }
     });
   });
+  
 </script>

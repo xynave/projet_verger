@@ -5,4 +5,5 @@ $bdd = new PDO('mysql:host=localhost;dbname=leveraged;charset=utf8', 'root', '',
 $_SESSION['type'] = 'Invité';
 $_SESSION['nom'] = 'l\'invité';
 $annonces = $bdd->query('SELECT * FROM annonces');
+$variete = $bdd->query('SELECT * FROM variete');
 ?>

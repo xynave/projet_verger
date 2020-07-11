@@ -1,3 +1,4 @@
+<?php include("m_open_bdd.php"); ?>
 <!--page carte  -->
 <!DOCTYPE html>
 <html >
@@ -92,3 +93,6 @@
 <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
+<?php
+$annonces->closeCursor(); // Termine le traitement de la requête
+?>

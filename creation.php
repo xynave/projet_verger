@@ -1,10 +1,4 @@
-<?php
-session_start(); // On démarre la session AVANT toute chose
-
-
-
-
-?>
+<?php include("m_open_bdd.php"); ?>
 
 
 <!-- page création annonce -->
@@ -55,7 +49,7 @@ session_start(); // On démarre la session AVANT toute chose
               </div>
               <!-- on rentre les informations produit -->
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Information général </label>
+            <label for="exampleFormControlTextarea1">Information général </label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <!--  on rentre les photos-->
@@ -99,7 +93,7 @@ session_start(); // On démarre la session AVANT toute chose
         <br>
       </div>
 
-    </div>
+</div>
 
 
   </section>
@@ -129,3 +123,6 @@ session_start(); // On démarre la session AVANT toute chose
 </body>
 
 </html>
+<?php
+$annonces->closeCursor(); // Termine le traitement de la requête
+?>
