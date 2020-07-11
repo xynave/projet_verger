@@ -48,7 +48,6 @@ $annonces = $bdd->query('SELECT * FROM annonces');
             <?php
             $compte=0;
             while ($donnees = $annonces->fetch()) {
-              $compte=1+ $compte;
               echo '
 
 
@@ -56,11 +55,11 @@ $annonces = $bdd->query('SELECT * FROM annonces');
                   <div class="card mb-3 mr-3 ml-3" >
                     <div class="row no-gutters">
                       <div class="col-md-4">
-                        <div id="carouselExampleIndicators'.htmlspecialchars($compte).'" class="carousel slide" data-ride="carousel">
+                        <div id="carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators'.htmlspecialchars($compte).'" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators'.htmlspecialchars($compte).'" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleIndicators'.htmlspecialchars($compte).'" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" data-slide-to="2"></li>
                             </ol>
                             
                             <div class="carousel-inner">
@@ -76,11 +75,11 @@ $annonces = $bdd->query('SELECT * FROM annonces');
                                 <img src="./images/Malus-Boskoop_organic[1].jpg" width="50" height="180"class="d-block w-100" alt="...">
                               </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators'.htmlspecialchars($compte).'" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators'.htmlspecialchars($compte).'" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" role="button" data-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="sr-only">Next</span>
                             </a>
