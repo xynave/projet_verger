@@ -166,7 +166,12 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
-
+.bouton-position{
+    background-color: #00acee;
+    color: white;
+    border-radius: 40%;
+    border: none;
+}
 /* FIN Zone map */
 
 /* Début Zone footer */

@@ -56,10 +56,13 @@
               </div>
 
         </br>
+        Votre position 
+        <button class="bouton-position "id = "find-me"><i class="fas fa-map-marker-alt"></i></button><br/>
         </br> 
        
         
 <!-- zone de la map -->
+
           <div class=" mappi">
             <div id="map"></div>
             

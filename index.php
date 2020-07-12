@@ -61,21 +61,21 @@
 
       </br>
       <!-- carroussel d'image -->
-      
+
       <div class="center">
         <!-- on choisi les nombres de petites cartes quand on reduit la fenetre -->
         <ul class="barre-items">
           <!-- nouvelle carte  -->
           <?php
-            while ($donnees = $annonces->fetch()) {
-              echo '
+          while ($donnees = $annonces->fetch()) {
+            echo '
               <li class="barre-item">
           <div class="col lg-4">
             <div class="card shadow-sm mb-4" style="width: 15rem; height:25rem;">
             <div class="card-header">
             <p class="card-text"> <strong>' . $donnees['variete'] . ' </strong> </p>
           </div>
-              <div id="carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" class="carousel slide" data-ride="carousel">
+              <div id="carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" class="carousel slide" data-ride="carousel">
               
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -88,11 +88,11 @@
                     <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -110,9 +110,24 @@
           </div>
           </li>
           ';
-            }
-            ?>
-          
+          }
+          ?>
+          <li class="barre-item">
+            <div class="col lg-4">
+              <div class="card shadow-sm mb-4" style="width: 15rem; height:25rem;">
+                <div class="card-header">
+                  <p class="card-text"> <strong>Plus d'annonces </strong> </p>
+                </div>
+                <div class="card-body ">
+
+
+                </div>
+                <div class="card-footer " style=" background-color:white;">
+                  <a href="p_annonces.php" class="btn   btn-outline-dark float-right">Voir</a>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
 
