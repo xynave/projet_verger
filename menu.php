@@ -51,7 +51,10 @@
     } else if (window.location.pathname === '/projet_verger/profil.php') {
       document.getElementById("profil").style.color = " #e2cfa6";
       document.getElementById("profil").style.borderBottom = "2px solid  #e2cfa6";
-    } else if (window.location.pathname === '/projet_verger/monannonce.php') {
+    }else if (window.location.pathname === '/projet_verger/mesdonnees.php') {
+      document.getElementById("profil").style.color = " #e2cfa6";
+      document.getElementById("profil").style.borderBottom = "2px solid  #e2cfa6";
+    }else if (window.location.pathname === '/projet_verger/monannonce.php') {
       document.getElementById("profil").style.color = " #e2cfa6";
       document.getElementById("profil").style.borderBottom = "2px solid  #e2cfa6";
     }

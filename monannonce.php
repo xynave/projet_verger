@@ -46,8 +46,8 @@
                 <?php include("categorie.php"); ?>
                  <!-- le titre -->
                  <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Titre de l'annonce </label>
-                  <imput class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="validationDefaultitre">Titre de l'annonce </label>
+                  <input type="text" class="form-control border-dark" id="validationDefaultitre" required>
                 </div>
                 </br>
                 <p>Les photos:</p>
@@ -90,7 +90,7 @@
                 <!-- description du produit -->
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Description du produit </label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control border-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 </br>
                 <!-- selection ville -->

@@ -64,13 +64,12 @@
       
       <div class="center">
         <!-- on choisi les nombres de petites cartes quand on reduit la fenetre -->
-        <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-         
-
+        <ul class="barre-items">
           <!-- nouvelle carte  -->
           <?php
             while ($donnees = $annonces->fetch()) {
               echo '
+              <li class="barre-item">
           <div class="col lg-4">
             <div class="card shadow-sm mb-4" style="width: 15rem; height:25rem;">
             <div class="card-header">
@@ -109,12 +108,12 @@
               </div>
             </div>
           </div>
+          </li>
           ';
             }
             ?>
           
-        </div>
-
+        </ul>
       </div>
 
 
