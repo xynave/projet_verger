@@ -88,12 +88,13 @@
                     <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
                   </div>
                 </div>
+                
                 <a class="carousel-control-prev" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
@@ -179,11 +180,11 @@
                 </div>
 
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
@@ -218,11 +219,11 @@
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
@@ -259,11 +260,11 @@
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
@@ -299,11 +300,11 @@
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                   <span class="sr-only">Next</span>
                 </a>
               </div>

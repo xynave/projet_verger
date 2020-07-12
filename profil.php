@@ -158,11 +158,11 @@ session_start(); // On démarre la session AVANT toute chose
                       </div>
                       <!-- les boutons de deplacements-->
                       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                         <span class="sr-only">Previous</span>
                       </a>
                       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
@@ -206,11 +206,11 @@ session_start(); // On démarre la session AVANT toute chose
                       </div>
 
                       <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                         <span class="sr-only">Previous</span>
                       </a>
                       <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
@@ -278,11 +278,11 @@ session_start(); // On démarre la session AVANT toute chose
                       </div>
                       <!-- bouton choix images  -->
                       <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                         <span class="sr-only">Previous</span>
                       </a>
                       <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
@@ -328,11 +328,11 @@ session_start(); // On démarre la session AVANT toute chose
                       </div>
 
                       <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                         <span class="sr-only">Previous</span>
                       </a>
                       <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                         <span class="sr-only">Next</span>
                       </a>
                     </div>

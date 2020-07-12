@@ -51,167 +51,9 @@
                   </div>
                 </div>
                 <!-- on choix la date de naissance -->
-                <label>Date de naissance</label>
-                <div class="form-row">
-                  <!-- choix jours -->
-                  <div class="col-md-3 mb-3">
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect1">Jour</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                        <option>13</option>
-                        <option>14</option>
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                        <option>21</option>
-                        <option>22</option>
-                        <option>23</option>
-                        <option>24</option>
-                        <option>25</option>
-                        <option>26</option>
-                        <option>27</option>
-                        <option>28</option>
-                        <option>29</option>
-                        <option>30</option>
-                        <option>31</option>
-                      </select>
-                    </div>
-                  </div>
-                  <!-- choix mois -->
-                  <div class="col-md-3 mb-3">
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect1">Mois</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Janvier</option>
-                        <option>Février</option>
-                        <option>Mars</option>
-                        <option>Avril</option>
-                        <option>Mai</option>
-                        <option>Juin</option>
-                        <option>Juillet</option>
-                        <option>Août</option>
-                        <option>Septembre</option>
-                        <option>Octobre</option>
-                        <option>Novembre</option>
-                        <option>Décembre</option>
-                      </select>
-                    </div>
-                  </div>
-                  <!-- choix année -->
-                  <div class="col-md-3 mb-3">
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect1">Année</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1930</option>
-                        <option>1931</option>
-                        <option>1932</option>
-                        <option>1933</option>
-                        <option>1934</option>
-                        <option>1935</option>
-                        <option>1936</option>
-                        <option>1937</option>
-                        <option>1938</option>
-                        <option>1939</option>
-                        <option>1940</option>
-                        <option>1941</option>
-                        <option>1942</option>
-                        <option>1943</option>
-                        <option>1944</option>
-                        <option>1945</option>
-                        <option>1946</option>
-                        <option>1947</option>
-                        <option>1948</option>
-                        <option>1949</option>
-                        <option>1950</option>
-                        <option>1951</option>
-                        <option>1952</option>
-                        <option>1953</option>
-                        <option>1954</option>
-                        <option>1955</option>
-                        <option>1956</option>
-                        <option>1957</option>
-                        <option>1958</option>
-                        <option>1959</option>
-                        <option>1960</option>
-                        <option>1961</option>
-                        <option>1962</option>
-                        <option>1963</option>
-                        <option>1964</option>
-                        <option>1965</option>
-                        <option>1966</option>
-                        <option>1967</option>
-                        <option>1968</option>
-                        <option>1969</option>
-                        <option>1970</option>
-                        <option>1971</option>
-                        <option>1972</option>
-                        <option>1973</option>
-                        <option>1974</option>
-                        <option>1975</option>
-                        <option>1976</option>
-                        <option>1977</option>
-                        <option>1978</option>
-                        <option>1979</option>
-                        <option>1980</option>
-                        <option>1971</option>
-                        <option>1972</option>
-                        <option>1973</option>
-                        <option>1974</option>
-                        <option>1975</option>
-                        <option>1976</option>
-                        <option>1977</option>
-                        <option>1978</option>
-                        <option>1979</option>
-                        <option>1980</option>
-                        <option>1981</option>
-                        <option>1982</option>
-                        <option>1983</option>
-                        <option>1984</option>
-                        <option>1985</option>
-                        <option>1986</option>
-                        <option>1987</option>
-                        <option>1988</option>
-                        <option>1989</option>
-                        <option>1990</option>
-                        <option>1991</option>
-                        <option>1992</option>
-                        <option>1993</option>
-                        <option>1994</option>
-                        <option>1995</option>
-                        <option>1996</option>
-                        <option>1997</option>
-                        <option>1998</option>
-                        <option>1999</option>
-                        <option>2000</option>
-                        <option>2001</option>
-                        <option>2002</option>
-                        <option>2003</option>
-                        <option>2004</option>
-                        <option>2005</option>
-                        <option>2006</option>
-                        <option>2007</option>
-                        <option>2008</option>
-                        <option>2009</option>
-                        <option>2010</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
+                <label for="date">Date de naissance </label>
+              <br>
+          <input type="date" id="date" min=" " max=" ">
                 <!--  choix mail-->
                 <div class="form-row ">
                   <div class="col-md-6 mb-3">
@@ -275,6 +117,24 @@
     <script src="./js/jquery3.4.1.min.js"></script>
     <!--boostrap js file-->
     <script src="./js/bootstrap.min.js"></script>
+<script>
+var today = new Date();
+var oldday = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear()-14;
+var xxxx = today.getFullYear()-100;
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+oldday =xxxx+'-'+mm+'-'+dd;
+document.getElementById("date").setAttribute("max", today); 
+document.getElementById("date").setAttribute("min", oldday); </script>
   </body>
 
   </html>
