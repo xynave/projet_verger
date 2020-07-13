@@ -69,25 +69,71 @@
           <?php
           while ($donnees = $annonces->fetch()) {
             echo '
+
               <li class="barre-item">
+              
           <div class="col lg-4">
             <div class="card shadow-sm mb-4" style="width: 15rem; height:25rem;">
             <div class="card-header">
             <p class="card-text"> <strong>' . $donnees['variete'] . ' </strong> </p>
           </div>
-              <div id="carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" class="carousel slide" data-ride="carousel">
-              
-                <div class="carousel-inner">
+                ';
+                //on verifie si l'image existe si oui on la met
+                if($donnees['img_name']!=""){
+                  echo '
+                  <div id="carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
+                  <img src="' . htmlspecialchars($donnees['img_path']) . '" width="100" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name']) . '">
+                  </div>';
+                }
+                 //on verifie si l'image 2 existe si oui
+                if($donnees['img_name2']!=""){
+                  //on vérifie si la 
+                  if($donnees['img_name']=="" && $donnees['img_name3']!=""){
+                    echo '
+                  <div id="carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                  <div class="carousel-item active">
+                  <img src="' . htmlspecialchars($donnees['img_path2']) . '" width="100" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name2']) . '">
+                </div>';
+                  }
+                  else if ($donnees['img_name']=="" && $donnees['img_name3']==""){
+                  echo '
+                  <div >
+                    <img src="' . htmlspecialchars($donnees['img_path2']) . '" width="100" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name2']) . '">
                   </div>
-                  <div class="carousel-item">
-                    <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="...">
-                  </div>
-                </div>
+                    ';
+                  }
+                  else {
+                    echo '
+                    <div class="carousel-item">
+                      <img src="' . htmlspecialchars($donnees['img_path2']) . '" width="100" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name2']) . '">
+                    </div>';
+                    }
+
+                }
+                if($donnees['img_name3']!=""){
+                  if ($donnees['img_name']!="" || $donnees['img_name2']!="")
+                  {
+                    echo '<div class="carousel-item">
+                    <img src="' . htmlspecialchars($donnees['img_path3']) . '" width="100" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name3']) . '">
+                  </div>';
+                  }
+                 
+               else{
+                  echo '<div >
+                  <img src="' . htmlspecialchars($donnees['img_path3']) . '" width="100" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name3']) . '">
+                </div>';
+                }
+              }
+              else if ($donnees['img_name3']=="" && $donnees['img_name2']=="" && $donnees['img_name']==""){
+                echo '<div >
+                <img src="./images/error.png" width="100" height="160" class="d-block w-100" alt="...">
+              </div>';
+              }
+                 if(($donnees['img_name']!="" && $donnees['img_name3']!="") || ($donnees['img_name2']!="" && $donnees['img_name3']!="")|| ($donnees['img_name']!="" && $donnees['img_name2']!=""))
+                 { echo' </div>
                 
                 <a class="carousel-control-prev" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="prev">
                   <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
@@ -97,9 +143,9 @@
                   <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
                   <span class="sr-only">Next</span>
                 </a>
-              </div>
+              </div>';}
 
-
+              echo'
               <div class="card-body ">
                 <h5 class="card-title">Distance</h5>
                 <p class="card-text"> ' . $donnees['description_annonce'] . '</p>

@@ -23,6 +23,7 @@ var marker5 = L.marker([46.6885956, -0.4187665]);
 var marker = L.marker(ny)
 
 //on remplace tout ça part un echo 
+
 var marker1 = L.marker(IO)
 markers.addLayer(marker1);
 marker1.bindPopup('<div class="col lg-4">\
