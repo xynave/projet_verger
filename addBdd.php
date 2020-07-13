@@ -1,4 +1,3 @@
-
 <?php
 // On commence par récupérer les champs
 if(isset($_POST['type']))      $type=$_POST['type'];
@@ -22,7 +21,21 @@ else      $code_postal=" ";
 if(isset($_POST['adresse']))      $adresse=$_POST['adresse'];
 else      $adresse=" ";
 
-$date=date("y.m.d");
+if(!empty($_FILES['img1'])){
+   $img= $_FILES['img1'];
+   $ext=strtolower(substr($img['name'],-3));
+   $allow_ext=array("png","jpg","gif");
+   if(in_array($ext,$allow_ext))
+   {
+    move_uploaded_file($img['tmp_name'],"images/".$img['name']);
+   }
+   else{
+       $erreur ="Votre fichier n'est pas une image.";
+   }
+   
+}
+
+/*$date=date("y.m.d");
 
 $dbco = new PDO('mysql:host=localhost;dbname=leveraged;charset=utf8', 'root', '',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -38,7 +51,8 @@ $sth = $dbco->prepare("INSERT INTO annonces (ID_annonce, titre_annonce, descript
                     $sth->bindParam(':ville',$ville);
                     $sth->execute();
                     header("Location: creation.php");
-                    exit();
+                    exit();*/
+                   
 
 
     

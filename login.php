@@ -107,7 +107,7 @@ session_start(); // On démarre la session AVANT toute chose
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                   <label class="form-check-label" for="invalidCheck2">
-                    Agree to terms and conditions
+                    J'accepte les termes d'utilisation.
                   </label>
                 </div>
               </div>
