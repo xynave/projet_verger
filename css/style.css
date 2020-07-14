@@ -22,7 +22,9 @@ body {
 .zone {
     background-color: rgb(245, 241, 235);
 }
-
+#detailsMap{
+    height: 400px;
+}
 .deplacer {
     margin-left: 5rem;
     margin-right: 5rem;

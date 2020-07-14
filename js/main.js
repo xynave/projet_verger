@@ -16,5 +16,3 @@
     }
 };
 
-
-//fin de changement page

@@ -10,15 +10,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>tuto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
 
-  <!--boostrap css file-->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
 
-  <!--fonat awesome icons-->
-  <link rel="stylesheet" href="./css/all.min.css">
+   
+<!--boostrap css file-->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
 
-  <!--custom css file-->
-  <link rel="stylesheet" href="./css/style.css">
+<!--fonat awesome icons-->
+<link rel="stylesheet" href="./css/all.min.css">
+
+<!--custom css file-->
+<link rel="stylesheet" href="./css/style.css">
+
 </head>
 <?php include("addBdd.php"); ?>
 
@@ -58,17 +66,17 @@
 
 
           <div class="card-body ">
-            <form method="POST" enctype="multipart/form-data" action="creation.php">
-              <?php include("categorie.php"); ?>
+          <form method="POST" enctype="multipart/form-data" action="creation.php">
+      <?php include("categorie.php"); ?>
               <!-- on rentre les informations produit -->
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Titre de l'annonce </label>
-                <input name="titre" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <input name="titre" class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
               </div>
               <!-- on rentre la description du produit -->
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Description du produit </label>
-                <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea name="description" class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
               </div>
               <!--  on rentre les photos-->
               <div class="form-group">
@@ -87,25 +95,34 @@
               <div class="form-row">
                 <div class="col-md-6 mb-3">
                   <label for="validationDefault03">Ville</label>
-                  <input name="ville" type="text" class="form-control border-dark" id="validationDefault03" required>
+                  <input name="ville" id="ville" type="text" class="form-control border-dark"  required>
                 </div>
                 <!-- on rentre le code postal -->
                 <div class="col-md-3 mb-3">
                   <label for="validationDefault05">Code postal</label>
-                  <input name="code_postal" type="number" min="01000" max="99999" class="form-control border-dark" id="validationDefault05" required>
+                  <input name="code_postal" id="code_postal" type="number" min="01000" max="99999" class="form-control border-dark" >
                 </div>
               </div>
               <!-- on rajout adresse -->
               <div class="form-row ">
                 <div class="col-md-6 mb-3">
                   <label for="validationDefault03">Adresse</label>
-                  <input name="adresse" type="text" class="form-control border-dark" id="validationDefault03" required>
+                  <input name="adresse" id="adresse" type="text" class="form-control border-dark" >
                 </div>
               </div>
-
-              <button class="btn bouton-style float-right" type="submit"><i class="fas fa-paper-plane"></i> Poster </button>
-              <!--$sql = "INSERT INTO `annonces` (`ID_annonce`, `titre_annonce`, `description_annonce`, `date_annonce`, `type`, `variete`) VALUES (NULL, \'radis magnifique\', \'de magnifique radis de mon jardin\', \'2020-07-11\', \'legume\', \'radis\')";-->
-            </form>
+    
+    <!-- Cette DIV affichera la carte -->
+    <div id="detailsMap"></div>
+    <!-- Les champs ci-dessous afficheront la latitude et la longitude -->
+    <br>
+    
+                  <input  name="lat" id="lat" type="text" class="form-control border-dark"  hidden>
+                
+                  <input  name="lon" id="lon" type="text" class="form-control border-dark"  hidden>
+                
+   
+              <button class="btn bouton-style float-right"  type="submit"><i class="fas fa-paper-plane"></i> Poster </button>
+               </form>
           </div>
         </div>
 
@@ -140,6 +157,10 @@
   <!--boostrap js file-->
 
   <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"> </script>
+  
+<script type="text/javascript" src="./js/app.js"></script>
+<script src="./js/creation.js"> </script>
   <?php
   if (isset($erreur)) { ?>
     <script>
