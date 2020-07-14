@@ -46,30 +46,73 @@
 <!-- noveau item-->
                   <div class="card mb-3 mr-3 ml-3" >
                     <div class="row no-gutters">
-                      <div class="col-md-4">
-                        <div id="carouselExampleIndicators'.htmlspecialchars($donnees['ID_annonce']).'" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                            
-                              <div class="carousel-item active">
-                              
-                                <img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="50" height="180"class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./images/Malus-Boskoop_organic[1].jpg" width="50" height="180"class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./images/Malus-Boskoop_organic[1].jpg" width="50" height="180"class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="prev">
-                              <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="next">
-                              <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
+                      <div class="col-md-4">';
+                      if($donnees['img_name']!=""){
+                        echo '
+                        <div id="carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="' . htmlspecialchars($donnees['img_path']) . '"  height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name']) . '">
+                        </div>';
+                      }
+                       //on verifie si l'image 2 existe si oui
+                      if($donnees['img_name2']!=""){
+                        //on vérifie si la 
+                        if($donnees['img_name']=="" && $donnees['img_name3']!=""){
+                          echo '
+                        <div id="carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="' . htmlspecialchars($donnees['img_path2']) . '" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name2']) . '">
+                      </div>';
+                        }
+                        else if ($donnees['img_name']=="" && $donnees['img_name3']==""){
+                        echo '
+                        <div >
+                          <img src="' . htmlspecialchars($donnees['img_path2']) . '"  height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name2']) . '">
+                        </div>
+                          ';
+                        }
+                        else {
+                          echo '
+                          <div class="carousel-item">
+                            <img src="' . htmlspecialchars($donnees['img_path2']) . '"  height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name2']) . '">
+                          </div>';
+                          }
+      
+                      }
+                      if($donnees['img_name3']!=""){
+                        if ($donnees['img_name']!="" || $donnees['img_name2']!="")
+                        {
+                          echo '<div class="carousel-item">
+                          <img src="' . htmlspecialchars($donnees['img_path3']) . '"  height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name3']) . '">
+                        </div>';
+                        }
+                       
+                     else{
+                        echo '<div >
+                        <img src="' . htmlspecialchars($donnees['img_path3']) . '"  height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name3']) . '">
+                      </div>';
+                      }
+                    }
+                    else if ($donnees['img_name3']=="" && $donnees['img_name2']=="" && $donnees['img_name']==""){
+                      echo '<div >
+                      <img src="./images/error.png"  height="160" class="d-block w-100" alt="...">
+                    </div>';
+                    }
+                       if(($donnees['img_name']!="" && $donnees['img_name3']!="") || ($donnees['img_name2']!="" && $donnees['img_name3']!="")|| ($donnees['img_name']!="" && $donnees['img_name2']!=""))
+                       { echo' </div>
+                      
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="prev">
+                        <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="next">
+                        <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-right"></i></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>';}
+                    echo'
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
