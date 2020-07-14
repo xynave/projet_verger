@@ -79,11 +79,17 @@
           </div>
                 ';
                 //on verifie si l'image existe si oui on la met
-                if($donnees['img_name']!=""){
+                if($donnees['img_name']!="" && ($donnees['img_name2']!="" || $donnees['img_name3']!="")){
                   echo '
                   <div id="carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                   <div class="carousel-item active">
+                  <img src="' . htmlspecialchars($donnees['img_path']) . '" width="100" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name']) . '">
+                  </div>';
+                }else if($donnees['img_name']!=""){
+                  echo '
+                 
+                  <div>
                   <img src="' . htmlspecialchars($donnees['img_path']) . '" width="100" height="160" class="d-block w-100" alt="' . htmlspecialchars($donnees['img_name']) . '">
                   </div>';
                 }
