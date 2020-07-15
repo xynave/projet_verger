@@ -1,4 +1,17 @@
-<?php include("m_open_bdd.php"); ?>
+<?php
+    // On inclut les fichiers de configuration et d'accès aux données
+    include 'm_open_bdd.php';
+    include 'm_bdd_annonces.php';
+
+    // On instancie la base de données
+    $database = new Database();
+    $db = $database->getConnection();
+
+    // On instancie les agences
+    $annonce = new Annonces($db);
+
+    $annonces = $annonce->lire();
+?>
 
 
 <!-- page création annonce -->

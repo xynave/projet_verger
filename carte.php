@@ -91,7 +91,9 @@
 
 <script src="./js/main.js"></script>
 <script type="text/javascript" src="./js/app.js"></script>
+<script>
 
+</script>
 <!--boostrap js file-->
 <script src="./js/bootstrap.min.js"></script>
 </body>

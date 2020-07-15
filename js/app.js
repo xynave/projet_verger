@@ -47,6 +47,30 @@ map.addLayer(markers);
 // ajout d'un popup
 marker.bindPopup('<div class="col lg-4"><div class="card " style="width: 15rem;"><div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel"><ol class="carousel-indicators"><li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li><li data-target="#carouselExampleIndicators1" data-slide-to="1"></li><li data-target="#carouselExampleIndicators1" data-slide-to="2"></li></ol><div class="carousel-inner"><div class="carousel-item active"><img src="./images/1200px-Lobo.2008-12-17[1].jpg" width="100" height="160" class="d-block w-100" alt="..."> </div> <div class="carousel-item"><img src="./images/apple-2788638__480[1].jpg" width="100" height="160" class="d-block w-100" alt="..."></div> <div class="carousel-item"><img src="./images/Malus-Boskoop_organic[1].jpg" width="100" height="160" class="d-block w-100" alt="..."></div></div><a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a></div><div class="card-body "><h5 class="card-title">Distance</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p><a href="uneannonce.php" class="btn  btn-outline-dark float-right">Voir</a> </div></div></div>');
 
+let xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = () => {
+    // La transaction est terminée ?
+    if(xmlhttp.readyState == 4){
+        // Si la transaction est un succès
+        if(xmlhttp.status == 200){
+            // On traite les données reçues
+            let donnees = JSON.parse(xmlhttp.responseText)
+            Object.entries(donnees.annonces).forEach(annonce => {
+            // Ici j'ai une seule agence
+            let marker = L.marker([annonce[1].lat, annonce[1].lon]).addTo(map);
+
+            })
+            
+        }else{
+            console.log(xmlhttp.statusText);
+        }
+    }
+}
+
+xmlhttp.open("GET", "http://localhost/projet_verger/liste.php");
+
+xmlhttp.send(null);
 /*fonction localisation mettre cette fonction en 
 function onLocationFound(e) {
     var radius = e.accuracy;
