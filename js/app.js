@@ -10,7 +10,7 @@ var map = L.map('map').setView(ny, 6);
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012',
     minZoom: 2,
-    maxZoom: 20
+    maxZoom: 18
 }).addTo(map);
 
 
@@ -41,7 +41,7 @@ markers.addLayer(marker5);
 markers.addLayer(marker);
 
 // On affiche le cluster
-map.addLayer(markers);
+
 // ajout d'un markeur
 
 // ajout d'un popup
@@ -58,8 +58,10 @@ xmlhttp.onreadystatechange = () => {
             let donnees = JSON.parse(xmlhttp.responseText)
             Object.entries(donnees.annonces).forEach(annonce => {
             // Ici j'ai une seule agence
-            let marker = L.marker([annonce[1].lat, annonce[1].lon]).addTo(map);
-
+             window['marker'+ annonce[1].ID_annonce] = L.marker([annonce[1].lat, annonce[1].lon]);
+             markers.addLayer( window['marker'+ annonce[1].ID_annonce]);
+             
+             
             })
             
         }else{
@@ -71,6 +73,7 @@ xmlhttp.onreadystatechange = () => {
 xmlhttp.open("GET", "http://localhost/projet_verger/liste.php");
 
 xmlhttp.send(null);
+map.addLayer(markers);
 /*fonction localisation mettre cette fonction en 
 function onLocationFound(e) {
     var radius = e.accuracy;
