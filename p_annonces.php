@@ -1,17 +1,66 @@
 <?php
-    // On inclut les fichiers de configuration et d'accès aux données
-    include 'm_open_bdd.php';
-    include 'm_bdd_annonces.php';
+// On inclut les fichiers de configuration et d'accès aux données
+include 'm_open_bdd.php';
+include 'm_bdd_annonces.php';
+session_start(); // On démarre la session AVANT toute chose
 
-    // On instancie la base de données
-    $database = new Database();
-    $db = $database->getConnection();
 
-    // On instancie les agences
-    $annonce = new Annonces($db);
+// On détermine sur quelle page on se trouve
+if(isset($_GET['page']) && !empty($_GET['page'])){
+  $currentPage = (int) strip_tags($_GET['page']);
+}else{
+  $currentPage = 1;
+}
+// On se connecte 
 
-    $annonces = $annonce->lire();
+// On instancie la base de données
+$database = new Database();
+$db = $database->getConnection();
+
+
+
+
+// On détermine le nombre total d'annonces
+$sql = 'SELECT COUNT(*) AS nb_annonces FROM `annonces`;';
+
+// On prépare la requête
+$query = $db->prepare($sql);
+
+// On exécute
+$query->execute();
+
+// On récupère le nombre d'annonces
+$result = $query->fetch();
+
+$nbAnnonces = (int) $result['nb_annonces'];
+
+// On détermine le nombre d'annonces par page
+$parPage = 10;
+
+// On calcule le nombre de pages total
+$pages = ceil($nbAnnonces / $parPage);
+
+// Calcul du 1ere annonce de la page
+$premier = ($currentPage * $parPage) - $parPage;
+
+$sql = 'SELECT * FROM `annonces` ORDER BY `date_annonce` DESC LIMIT :premier, :parpage;';
+
+// On prépare la requête
+$query = $db->prepare($sql);
+
+$query->bindValue(':premier', $premier, PDO::PARAM_INT);
+$query->bindValue(':parpage', $parPage, PDO::PARAM_INT);
+
+// On exécute
+$query->execute();
+
+// On récupère les valeurs dans un tableau associatif
+$annonces = $query->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
+
+
+
 <!-- page connexion -->
 <!DOCTYPE html>
 <html>
@@ -52,11 +101,11 @@
 
           <div class="list-group my-2">
             <?php
-            while ($donnees = $annonces->fetch()) {
+            foreach ($annonces as $donnees) {
               echo '
 
 
-<!-- noveau item-->
+<!-- nouveau item-->
                   <div class="card mb-3 mr-3 ml-3" >
                     <div class="row no-gutters">
                       <div class="col-md-4">';
@@ -75,7 +124,7 @@
               }
               //on verifie si l'image 2 existe si oui
               if ($donnees['img_name2'] != "") {
-                //on vérifie si la 
+                //on vérifie si la
                 if ($donnees['img_name'] == "" && $donnees['img_name3'] != "") {
                   echo '
                         <div id="carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" class="carousel slide" data-ride="carousel">
@@ -113,7 +162,7 @@
               }
               if (($donnees['img_name'] != "" && $donnees['img_name3'] != "") || ($donnees['img_name2'] != "" && $donnees['img_name3'] != "") || ($donnees['img_name'] != "" && $donnees['img_name2'] != "")) {
                 echo ' </div>
-                      
+
                       <a class="carousel-control-prev" href="#carouselExampleIndicators' . htmlspecialchars($donnees['ID_annonce']) . '" role="button" data-slide="prev">
                         <span class="carousel" aria-hidden="true"> <i class="  fas fa-angle-left"></i></span>
                         <span class="sr-only">Previous</span>
@@ -144,24 +193,24 @@
           </div>
 
           <!----====== Pagination ======---->
-
-          <div class="card-center ">
-            <nav aria-label="Page de navigation ">
-              <ul class="pagination " style="margin-left: auto; margin-right: auto; width:15em; ">
-                <li class="page-item  ">
-                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          <nav>
+            <ul class="pagination">
+              <!-- Lien vers la page précédente (désactivé si on se trouve sur la 1ère page) -->
+              <li class="page-item <?= ($currentPage == 1) ? "disabled" : "" ?>">
+                <a href="./p_annonces.php?page=<?= $currentPage - 1 ?>" class="page-link">Précédente</a>
+              </li>
+              <?php for ($page = 1; $page <= $pages; $page++) : ?>
+                <!-- Lien vers chacune des pages (activé si on se trouve sur la page correspondante) -->
+                <li class="page-item <?= ($currentPage == $page) ? "active" : "" ?>">
+                  <a href="./p_annonces.php?page=<?= $page ?>" class="page-link"><?= $page ?></a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+              <?php endfor ?>
+              <!-- Lien vers la page suivante (désactivé si on se trouve sur la dernière page) -->
+              <li class="page-item <?= ($currentPage == $pages) ? "disabled" : "" ?>">
+                <a href="./p_annonces.php?page=<?= $currentPage + 1 ?>" class="page-link">Suivante</a>
+              </li>
+            </ul>
+          </nav>
 
         </div>
       </div>
@@ -196,5 +245,5 @@
 <!--- Fin de traitement de la bdd ----->
 
 <?php
-$annonces->closeCursor(); // Termine le traitement de la requête
+$query->closeCursor(); // Termine le traitement de la requête
 ?>

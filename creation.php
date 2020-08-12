@@ -3,6 +3,8 @@
     include 'm_open_bdd.php';
     include 'm_bdd_annonces.php';
 
+    session_start(); // On démarre la session AVANT toute chose
+
     // On instancie la base de données
     $database = new Database();
     $db = $database->getConnection();
@@ -30,7 +32,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
 
-   
+
 <!--boostrap css file-->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 
@@ -78,6 +80,7 @@
           <!-- la tete de la carte -->
 
 
+
           <div class="card-body ">
           <form method="POST" enctype="multipart/form-data" action="addBdd.php">
       <?php include("categorie.php"); ?>
@@ -123,17 +126,17 @@
                   <input name="adresse" id="adresse" type="text" class="form-control border-dark" >
                 </div>
               </div>
-    
+
     <!-- Cette DIV affichera la carte -->
     <div id="detailsMap"></div>
     <!-- Les champs ci-dessous afficheront la latitude et la longitude -->
     <br>
-    
+
                   <input  name="lat" id="lat" type="text" class="form-control border-dark"  hidden>
-                
+
                   <input  name="lon" id="lon" type="text" class="form-control border-dark"  hidden>
-                
-   
+
+
               <button class="btn bouton-style float-right"  type="submit"><i class="fas fa-paper-plane"></i> Poster </button>
                </form>
           </div>
@@ -171,7 +174,7 @@
 
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/main.js"> </script>
-  
+
 <script type="text/javascript" src="./js/app.js"></script>
 <script src="./js/creation.js"> </script>
   <?php

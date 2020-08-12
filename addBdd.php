@@ -38,9 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 //tableau avec diferent type de fichier image
                                 $allow_ext = array("png", "jpg", "gif");
 
-                                //si le fichier est une image 
+                                //si le fichier est une image
                                 if (in_array($ext, $allow_ext) || !isset($_POST['img1'])) {
-                                    //on recommence avec fichier 2          
+                                    //on recommence avec fichier 2
 
                                     if (!empty($_FILES['img2'])) {
 
@@ -86,9 +86,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                     $lat = $_POST['lat'];
                                                     $lon = $_POST['lon'];
                                                     //on lance la base de donnée
-                                                    $dbco = new PDO('mysql:host=localhost;dbname=leveraged;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                                                    $dbco = new PDO('mysql:host=localhost;dbname=leveraged;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                                                     $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                                                    //on lance requete sql                                  
+                                                    //on lance requete sql
 
                                                     $sth = $dbco->prepare("INSERT INTO annonces (ID_annonce, titre_annonce, description_annonce, date_annonce,type, variete,Ville,Code_postal,Adresse,img_path,img_name,img_path2,img_name2,img_path3,img_name3,lat,lon) VALUES (NULL, :titre, :description, :date, :type, :variete,:ville,:code_postal,:adresse,:img_path,:img_name,:img_path2,:img_name2,:img_path3,:img_name3,:lat,:lon)");
                                                     //on fait correspondre les variables avec les variable sql
