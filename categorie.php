@@ -39,7 +39,7 @@
 
     var element = document.createElement("option"); // Création d'un élément li
     element.id = "Choisis_ta_variete"; // Définition de son identifiant
-    element.textContent = "Choisis ta variété"; // Définition de son contenu textuel
+    element.textContent = "Choisis une variété"; // Définition de son contenu textuel
     document.getElementById("variete").appendChild(element); 
 
     var element = document.createElement("option"); // Création d'un élément li
@@ -65,7 +65,7 @@
   else if(document.getElementById('type').value == "legume"){
     var element = document.createElement("option"); // Création d'un élément li
     element.id = "Choisis_ta_variete"; // Définition de son identifiant
-    element.textContent = "Choisis ta variété"; // Définition de son contenu textuel
+    element.textContent = "Choisis une variété"; // Définition de son contenu textuel
     document.getElementById("variete").appendChild(element); 
 
     var element = document.createElement("option"); // Création d'un élément li
@@ -87,7 +87,7 @@
   else if(document.getElementById('type').value == "autres"){
     var element = document.createElement("option"); // Création d'un élément li
     element.id = "Choisis_ta_variete"; // Définition de son identifiant
-    element.textContent = "Choisis ta variété"; // Définition de son contenu textuel
+    element.textContent = "Choisis une variété"; // Définition de son contenu textuel
     document.getElementById("variete").appendChild(element); 
 
     var element = document.createElement("option"); // Création d'un élément li
@@ -102,7 +102,7 @@
   }else{
     var element = document.createElement("option"); // Création d'un élément li
     element.id = "Choisis_ta_variete"; // Définition de son identifiant
-    element.textContent = "Choisis ta variété"; // Définition de son contenu textuel
+    element.textContent = "Choisis une variété"; // Définition de son contenu textuel
     document.getElementById("variete").appendChild(element);
   }
 
