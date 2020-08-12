@@ -57,10 +57,23 @@ xmlhttp.onreadystatechange = () => {
             // On traite les données reçues
             let donnees = JSON.parse(xmlhttp.responseText)
             Object.entries(donnees.annonces).forEach(annonce => {
-            // Ici j'ai une seule agence
+            
              window['marker'+ annonce[1].ID_annonce] = L.marker([annonce[1].lat, annonce[1].lon]);
              markers.addLayer( window['marker'+ annonce[1].ID_annonce]);
-             
+             window['marker'+ annonce[1].ID_annonce].bindPopup('<div class="col lg-4">\
+             <div class="card shadow-sm mb-4" style="width: 15rem; height:25rem;">\
+             <div class="card-header">\
+             <p class="card-text"> <strong>' + annonce[1].titre+ ' </strong> </p>\
+           </div>\
+           <div class="card-body ">\
+                 <h5 class="card-title">Distance</h5>\
+                 <p class="card-text"> ' + annonce[1].description+ '</p>\
+               </div>\
+               <div class="card-footer " style=" background-color:white;">\
+               <a href="uneannonce.php" class="btn   btn-outline-dark float-right">Voir</a>\
+               </div>\
+             </div>\
+           </div>');
              
             })
             
@@ -74,6 +87,7 @@ xmlhttp.open("GET", "http://localhost/projet_verger/liste.php");
 
 xmlhttp.send(null);
 map.addLayer(markers);
+
 /*fonction localisation mettre cette fonction en 
 function onLocationFound(e) {
     var radius = e.accuracy;
@@ -85,6 +99,7 @@ function onLocationFound(e) {
   
 }
 /* fonction de localisation*/
+
 function localistaion(){
     map.locate({setView: true, maxZoom: 7});
     map.on('locationfound', onLocationFound);

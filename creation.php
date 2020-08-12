@@ -79,7 +79,7 @@
 
 
           <div class="card-body ">
-          <form method="POST" enctype="multipart/form-data" action="creation.php">
+          <form method="POST" enctype="multipart/form-data" action="addBdd.php">
       <?php include("categorie.php"); ?>
               <!-- on rentre les informations produit -->
               <div class="form-group">
@@ -113,7 +113,7 @@
                 <!-- on rentre le code postal -->
                 <div class="col-md-3 mb-3">
                   <label for="validationDefault05">Code postal</label>
-                  <input name="code_postal" id="code_postal" type="number" min="01000" max="99999" class="form-control border-dark" >
+                  <input name="code_postal" id="code_postal" type="number" min="01000" max="99999" class="form-control border-dark" required>
                 </div>
               </div>
               <!-- on rajout adresse -->

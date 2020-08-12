@@ -98,6 +98,3 @@
 <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
-<?php
-$annonces->closeCursor(); // Termine le traitement de la requête
-?>

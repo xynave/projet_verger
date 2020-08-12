@@ -37,6 +37,17 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
                 "Nom_annonce"=>$titre_annonce,
                 "lat" => $lat,
                 "lon" => $lon,
+                "titre"=>$titre_annonce,
+                "description"=>$description_annonce	,
+                "type"=>$type,
+                "variete"=>$variete,
+                "img_path"=>$img_path,
+                "img_path2"=>$img_path2,
+                "img_path3"=>$img_path3,
+                "img_name"=>$img_name,
+                "img_name2"=>$img_name2,
+                "img_name3"=>$img_name3,
+
             ];
 
             $tableauAnnonces['annonces'][] = $agen;
