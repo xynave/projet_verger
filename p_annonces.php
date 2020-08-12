@@ -194,7 +194,7 @@ $annonces = $query->fetchAll(PDO::FETCH_ASSOC);
 
           <!----====== Pagination ======---->
           <nav>
-            <ul class="pagination">
+            <ul class="pagination" style="margin-left: auto; margin-right: auto; width:15em;">
               <!-- Lien vers la page précédente (désactivé si on se trouve sur la 1ère page) -->
               <li class="page-item <?= ($currentPage == 1) ? "disabled" : "" ?>">
                 <a href="./p_annonces.php?page=<?= $currentPage - 1 ?>" class="page-link">Précédente</a>

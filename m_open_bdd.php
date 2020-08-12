@@ -3,7 +3,7 @@ class Database{
    private $host = "localhost";
    private $db_name = "leveraged";
    private  $username = "root";
-   private $password = "root";
+   private $password = "";
    public $connexion;
 
    public function getConnection(){

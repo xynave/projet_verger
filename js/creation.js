@@ -1,6 +1,6 @@
 
 let mymap, marqueur// Variable qui permettra de stocker la carte et le marqueur
- 
+
 // On attend que le DOM soit chargé
 window.onload = () => {
     // Nous initialisons la carte et nous la centrons sur Paris
